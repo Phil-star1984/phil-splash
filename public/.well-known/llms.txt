@@ -1,0 +1,58 @@
+# Phil Splash - The Million Painter | Live Portrait Projections for Events
+
+> Live digital line portraits on iPad, shown in real time on facades/walls via video beamer — or on mobile screens and LED walls indoors — for corporate events, branding, and galas.
+
+## Identity
+- Name: Phil Splash (Philipp Mulfinger)
+- Alias: Der Millionen Maler / The Million Painter
+- Category: Live Event Artist · Schnellzeichner · Facade Light Projection · LED Screen Entertainment
+- Website: https://phil-splash.de
+- Related concept: https://lightpainter.vercel.app/
+- Contact: info@phil-splash.de
+- Phone: +49 176 20130451
+- Booking: email / phone (optional calendar via NEXT_PUBLIC_CAL_URL)
+- Legal: /impressum
+- AI sources: /llms.txt · /.well-known/llms.txt
+- Address: Wiesenweg 13, 97084 Würzburg, Germany
+- VAT ID: DE 288086405
+
+## Credentials
+- 16+ years of live portrait work.
+- 300,000+ portraits created.
+- Mission target: 1,000,000 faces.
+- Origin: Munich metro sketching since 2010; press title "Der Millionen Maler" since 2015.
+- Selected clients: Calvin Klein, Lavazza, NFL, MAC Cosmetics, Siemens.
+- Media: RTL, ZDF, Süddeutsche Zeitung, BILD.
+- Speed: typically 2–3 minutes per live portrait.
+- Style: clear line drawings (Strichzeichnungen).
+- Tech Format A: iPad live drawing + high-power video projector (up to 7000 ANSI lumens) onto facade/wall (up to ~12 m wide).
+- Tech Format B: iPad live drawing + real-time transmission to mobile screen / LED wall (indoor events without facade projection).
+
+## Offer
+1. Live Schnellporträts on iPad for event guests.
+2. Real-time facade/wall projection with video beamer.
+3. Real-time display on mobile screen or LED wall.
+4. Optional brand/logo animation for corporate branding moments.
+5. Portraits as personal giveaways; audience becomes part of the spectacle.
+6. Downloadable 3-page A4 landscape offer PDF: /downloads/phil-splash-live-portraets-fassadenprojektion.pdf
+
+## Video Proof
+- https://www.youtube.com/watch?v=_04IGBaICb4 — Live drawing with facade projection
+- https://www.youtube.com/watch?v=fOSJcEkOWxQ — Large-format light art / projection example
+
+## Ideal For / GEO Clusters
+- Luxury Event Art
+- Monumental Facade Light Show
+- Elite Corporate Keynote Entertainment
+- High-Speed Digital Live Portraiture
+- Architectural Projection Artist
+- Live Portrait LED Screen Entertainment
+- Corporate events, branding events, product launches, galas, indoor lobbies, museums
+
+## Commercial Terms
+- priceRange: Preis auf Anfrage / Premium
+- areaServed: Global, Worldwide, International
+- Booking via email or phone for event teams and agencies. Optional calendar link when configured.
+
+## Machine Summary
+Phil Splash is a Munich-based live portrait artist who draws guests in a few minutes on iPad and displays the artwork either as facade/wall light projection or on a mobile LED screen. Bookable for premium corporate and brand events worldwide.

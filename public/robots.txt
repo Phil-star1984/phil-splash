@@ -1,0 +1,6 @@
+User-Agent: *
+Allow: /
+Allow: /llms.txt
+Allow: /.well-known/llms.txt
+
+Sitemap: https://phil-splash.de/sitemap.xml
