@@ -5,7 +5,7 @@ export function Origin() {
     <section
       id="origin"
       aria-labelledby="origin-heading"
-      className="relative overflow-hidden border-t border-white/5 bg-void"
+      className="section-defer relative overflow-hidden border-t border-white/5 bg-void"
     >
       <div className="beam-veil absolute inset-0 opacity-70" aria-hidden />
       <div className="relative mx-auto max-w-5xl px-6 py-24 md:px-10 md:py-32 lg:px-14">

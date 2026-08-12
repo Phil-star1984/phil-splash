@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { MediaImage } from "@/components/MediaImage";
 import { RITUAL } from "@/lib/content";
 
 export function Ritual() {
@@ -6,7 +6,7 @@ export function Ritual() {
     <section
       id="ritual"
       aria-labelledby="ritual-heading"
-      className="relative border-t border-white/5 bg-void"
+      className="section-defer relative border-t border-white/5 bg-void"
     >
       <div className="px-6 py-20 md:px-10 md:py-28 lg:px-14">
         <p className="font-display text-[0.7rem] uppercase tracking-[0.32em] text-laser">
@@ -35,7 +35,7 @@ export function Ritual() {
                 index % 2 === 1 ? "lg:order-2" : ""
               }`}
             >
-              <Image
+              <MediaImage
                 src={pillar.image.src}
                 alt={pillar.image.alt}
                 fill

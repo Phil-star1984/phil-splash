@@ -12,7 +12,7 @@ export function OfferDownload() {
     <section
       id="angebot"
       aria-labelledby="angebot-heading"
-      className="relative border-t border-white/5 bg-void"
+      className="section-defer relative border-t border-white/5 bg-void"
     >
       <div className="mx-auto grid max-w-6xl gap-10 px-6 py-20 md:grid-cols-[1.2fr_1fr] md:items-center md:gap-14 md:px-10 md:py-28 lg:px-14">
         <div>

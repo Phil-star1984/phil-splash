@@ -5,7 +5,7 @@ export function Formats() {
     <section
       id="formate"
       aria-labelledby="formate-heading"
-      className="relative border-t border-white/5 bg-void-elevated"
+      className="section-defer relative border-t border-white/5 bg-void-elevated"
     >
       <div className="laser-line" aria-hidden />
       <div className="px-6 py-20 md:px-10 md:py-28 lg:px-14">

@@ -1,15 +1,16 @@
-import Image from "next/image";
+import { MediaImage } from "@/components/MediaImage";
 import { HERO_MEDIA, SITE } from "@/lib/content";
 
 export function Hero() {
   return (
     <header className="relative min-h-[100svh] overflow-hidden projection-canvas">
       <div className="absolute inset-0">
-        <Image
+        <MediaImage
           src={HERO_MEDIA.src}
           alt={HERO_MEDIA.alt}
           fill
           priority
+          soft={false}
           sizes="100vw"
           className="object-cover object-[center_40%] scale-[1.01]"
         />

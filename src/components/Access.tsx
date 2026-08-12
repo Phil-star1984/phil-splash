@@ -7,7 +7,7 @@ export function Access() {
     <section
       id="access"
       aria-labelledby="access-heading"
-      className="relative border-t border-white/5 bg-void-elevated"
+      className="section-defer relative border-t border-white/5 bg-void-elevated"
     >
       <div className="laser-line" aria-hidden />
       <div className="mx-auto max-w-4xl px-6 py-24 text-center md:px-10 md:py-32 lg:px-14">

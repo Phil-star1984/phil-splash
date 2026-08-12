@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { MediaImage } from "@/components/MediaImage";
 import { SCREEN_FEATURED, SCREEN_GALLERY } from "@/lib/content";
 
 function Shot({
@@ -12,7 +12,7 @@ function Shot({
 }) {
   return (
     <figure className={`relative overflow-hidden bg-void ${className ?? ""}`}>
-      <Image
+      <MediaImage
         src={shot.src}
         alt={shot.alt}
         fill
@@ -33,7 +33,7 @@ export function ScreenFormat() {
     <section
       id="screen-format"
       aria-labelledby="screen-heading"
-      className="relative border-t border-white/5 bg-void"
+      className="section-defer relative border-t border-white/5 bg-void"
     >
       <div className="px-6 py-20 md:px-10 md:py-28 lg:px-14">
         <p className="font-display text-[0.7rem] uppercase tracking-[0.32em] text-splash">
