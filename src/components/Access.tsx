@@ -1,7 +1,9 @@
+import type { Dictionary } from "@/i18n/dictionaries/types";
 import { SITE } from "@/lib/content";
 
-export function Access() {
+export function Access({ dict }: { dict: Dictionary }) {
   const hasCal = Boolean(SITE.calUrl);
+  const mailtoHref = `mailto:${SITE.email}?subject=${encodeURIComponent(dict.access.mailtoSubject)}&body=${encodeURIComponent(dict.access.mailtoBody)}`;
 
   return (
     <section
@@ -12,32 +14,30 @@ export function Access() {
       <div className="laser-line" aria-hidden />
       <div className="mx-auto max-w-4xl px-6 py-24 text-center md:px-10 md:py-32 lg:px-14">
         <p className="font-display text-[0.7rem] uppercase tracking-[0.32em] text-laser">
-          Anfrage
+          {dict.access.eyebrow}
         </p>
         <h2
           id="access-heading"
           className="font-display mt-5 text-[clamp(1.9rem,4.8vw,3.4rem)] leading-[1.05] font-bold tracking-[-0.03em] text-signal"
         >
-          Für Ihr Event verfügbar?
+          {dict.access.title}
         </h2>
         <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-titanium md:text-lg">
-          Firmenfeier, Corporate Branding, Product Launch oder Gala: Senden Sie Ort, Datum und
-          gewünschtes Format — wir klären Technik, Ablauf und Angebot.
+          {dict.access.body}
         </p>
         <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-titanium-dim md:text-lg">
-          Preise auf Anfrage. National und international buchbar. Zum internen Weiterleiten steht
-          ein{" "}
+          {dict.access.bodySecondaryBefore}{" "}
           <a href="#angebot" className="text-laser underline-offset-4 hover:underline">
-            Angebots-PDF
+            {dict.access.offerLink}
           </a>{" "}
-          bereit.
+          {dict.access.bodySecondaryAfter}
         </p>
         <div className="mt-12 flex flex-col items-center justify-center gap-4 sm:flex-row">
           <a
-            href={SITE.mailtoHref}
+            href={mailtoHref}
             className="inline-flex min-w-[240px] items-center justify-center border border-laser bg-laser/15 px-8 py-4 text-[0.72rem] font-medium uppercase tracking-[0.24em] text-signal transition-all hover:bg-laser/25"
           >
-            Anfrage per E-Mail
+            {dict.access.ctaEmail}
           </a>
           {hasCal ? (
             <a
@@ -46,14 +46,14 @@ export function Access() {
               rel="noopener noreferrer"
               className="inline-flex min-w-[240px] items-center justify-center border border-white/15 px-8 py-4 text-[0.72rem] uppercase tracking-[0.24em] text-titanium transition-colors hover:border-titanium hover:text-signal"
             >
-              Termin im Kalender
+              {dict.access.ctaCal}
             </a>
           ) : (
             <a
               href={`tel:${SITE.phone}`}
               className="inline-flex min-w-[240px] items-center justify-center border border-white/15 px-8 py-4 text-[0.72rem] uppercase tracking-[0.24em] text-titanium transition-colors hover:border-titanium hover:text-signal"
             >
-              Anrufen
+              {dict.access.ctaCall}
             </a>
           )}
         </div>

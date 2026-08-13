@@ -1,7 +1,8 @@
 import { MediaImage } from "@/components/MediaImage";
-import { RITUAL } from "@/lib/content";
+import type { Dictionary } from "@/i18n/dictionaries/types";
+import { RITUAL_MEDIA } from "@/lib/content";
 
-export function Ritual() {
+export function Ritual({ dict }: { dict: Dictionary }) {
   return (
     <section
       id="ritual"
@@ -10,60 +11,62 @@ export function Ritual() {
     >
       <div className="px-6 py-20 md:px-10 md:py-28 lg:px-14">
         <p className="font-display text-[0.7rem] uppercase tracking-[0.32em] text-laser">
-          Ablauf
+          {dict.ritual.eyebrow}
         </p>
         <h2
           id="ritual-heading"
           className="font-display mt-4 max-w-3xl text-[clamp(1.8rem,4.5vw,3.4rem)] leading-[1.05] font-bold tracking-[-0.03em] text-signal"
         >
-          Zeichnung. Übertragung. Wirkung.
+          {dict.ritual.title}
         </h2>
         <p className="mt-5 max-w-2xl text-base leading-relaxed text-titanium md:text-lg">
-          Parallel entsteht ein Unikat für den Gast und eine Inszenierung für das Publikum — sichtbar
-          an Fassade, Wand oder Screen.
+          {dict.ritual.intro}
         </p>
       </div>
 
       <div className="flex flex-col">
-        {RITUAL.map((pillar, index) => (
-          <article
-            key={pillar.id}
-            className="relative grid min-h-[85svh] grid-cols-1 border-t border-white/5 lg:grid-cols-2"
-          >
-            <div
-              className={`relative min-h-[50svh] lg:min-h-full ${
-                index % 2 === 1 ? "lg:order-2" : ""
-              }`}
+        {dict.ritual.items.map((pillar, index) => {
+          const media = RITUAL_MEDIA[index];
+          return (
+            <article
+              key={pillar.id}
+              className="relative grid min-h-[85svh] grid-cols-1 border-t border-white/5 lg:grid-cols-2"
             >
-              <MediaImage
-                src={pillar.image.src}
-                alt={pillar.image.alt}
-                fill
-                sizes="(max-width: 1024px) 100vw, 50vw"
-                className="object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-black/20" />
-            </div>
-            <div
-              className={`flex flex-col justify-center bg-void-elevated px-6 py-16 md:px-12 lg:px-16 ${
-                index % 2 === 1 ? "lg:order-1" : ""
-              }`}
-            >
-              <p className="font-display text-[0.68rem] uppercase tracking-[0.3em] text-splash">
-                0{index + 1} — {pillar.label}
-              </p>
-              <h3 className="font-display mt-5 text-[clamp(1.7rem,3vw,2.6rem)] leading-[1.08] font-bold tracking-[-0.02em] text-signal">
-                {pillar.title}
-              </h3>
-              <p className="mt-6 max-w-lg text-base leading-relaxed text-titanium md:text-lg">
-                {pillar.body}
-              </p>
-              <p className="mt-4 max-w-lg text-base leading-relaxed text-titanium-dim md:text-lg">
-                {pillar.bodySecondary}
-              </p>
-            </div>
-          </article>
-        ))}
+              <div
+                className={`relative min-h-[50svh] lg:min-h-full ${
+                  index % 2 === 1 ? "lg:order-2" : ""
+                }`}
+              >
+                <MediaImage
+                  src={media.src}
+                  alt={pillar.imageAlt}
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  className="object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-black/20" />
+              </div>
+              <div
+                className={`flex flex-col justify-center bg-void-elevated px-6 py-16 md:px-12 lg:px-16 ${
+                  index % 2 === 1 ? "lg:order-1" : ""
+                }`}
+              >
+                <p className="font-display text-[0.68rem] uppercase tracking-[0.3em] text-splash">
+                  0{index + 1} — {pillar.label}
+                </p>
+                <h3 className="font-display mt-5 text-[clamp(1.7rem,3vw,2.6rem)] leading-[1.08] font-bold tracking-[-0.02em] text-signal">
+                  {pillar.title}
+                </h3>
+                <p className="mt-6 max-w-lg text-base leading-relaxed text-titanium md:text-lg">
+                  {pillar.body}
+                </p>
+                <p className="mt-4 max-w-lg text-base leading-relaxed text-titanium-dim md:text-lg">
+                  {pillar.bodySecondary}
+                </p>
+              </div>
+            </article>
+          );
+        })}
       </div>
     </section>
   );

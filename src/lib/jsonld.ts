@@ -1,6 +1,6 @@
 import { CREDENTIALS, GEO_CLUSTERS, SITE } from "./content";
 
-export function buildJsonLd() {
+export function buildJsonLd(description: string) {
   const heroImage = `${SITE.url}/media/call_fUG0wZIAn8DWBemEicLWe2VC.jpg`;
 
   return {
@@ -13,7 +13,7 @@ export function buildJsonLd() {
         alternateName: [SITE.alias, SITE.legalName, "The Million Painter"],
         jobTitle:
           "Ultra-Premium Live Event Artist, Schnellzeichner & Architectural Projection Performer",
-        description: SITE.descriptionLong,
+        description,
         url: SITE.url,
         email: SITE.email,
         telephone: SITE.phone,
@@ -35,7 +35,7 @@ export function buildJsonLd() {
         alternateName: "Der Millionen Maler Live Experience",
         url: SITE.url,
         image: heroImage,
-        description: SITE.descriptionLong,
+        description,
         provider: { "@id": `${SITE.url}/#phil-splash` },
         priceRange: CREDENTIALS.segment,
         areaServed: CREDENTIALS.areaServed.map((name) => ({
@@ -142,7 +142,7 @@ export function buildJsonLd() {
         "@id": `${SITE.url}/#website`,
         url: SITE.url,
         name: `${SITE.name} | ${SITE.alias}`,
-        description: SITE.description,
+        description,
         inLanguage: ["de", "en"],
         publisher: { "@id": `${SITE.url}/#phil-splash` },
       },

@@ -5,10 +5,11 @@ import { useState } from "react";
 type YouTubeEmbedProps = {
   id: string;
   title: string;
+  playLabel?: string;
 };
 
 /** Facade: load YouTube iframe only after click — avoids ~1MB+ player JS on page load. */
-export function YouTubeEmbed({ id, title }: YouTubeEmbedProps) {
+export function YouTubeEmbed({ id, title, playLabel = "Play" }: YouTubeEmbedProps) {
   const [active, setActive] = useState(false);
   const poster = `https://i.ytimg.com/vi/${id}/hqdefault.jpg`;
 
@@ -30,7 +31,7 @@ export function YouTubeEmbed({ id, title }: YouTubeEmbedProps) {
       type="button"
       onClick={() => setActive(true)}
       className="group absolute inset-0 h-full w-full cursor-pointer border-0 bg-black p-0 text-left"
-      aria-label={`${title} abspielen`}
+      aria-label={`${playLabel}: ${title}`}
     >
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img

@@ -1,6 +1,6 @@
-import { FORMAT_OPTIONS } from "@/lib/content";
+import type { Dictionary } from "@/i18n/dictionaries/types";
 
-export function Formats() {
+export function Formats({ dict }: { dict: Dictionary }) {
   return (
     <section
       id="formate"
@@ -10,25 +10,21 @@ export function Formats() {
       <div className="laser-line" aria-hidden />
       <div className="px-6 py-20 md:px-10 md:py-28 lg:px-14">
         <p className="font-display text-[0.7rem] uppercase tracking-[0.32em] text-laser">
-          Zwei Formate
+          {dict.formats.eyebrow}
         </p>
         <h2
           id="formate-heading"
           className="font-display mt-4 max-w-3xl text-[clamp(1.8rem,4.5vw,3.2rem)] leading-[1.05] font-bold tracking-[-0.03em] text-signal"
         >
-          Fassade oder Screen.
+          {dict.formats.title}
         </h2>
         <p className="mt-5 max-w-2xl text-base leading-relaxed text-titanium md:text-lg">
-          Dieselbe Live-Zeichnung auf dem iPad — unterschiedlich ausgespielt, abhängig von Location
-          und Eventziel.
+          {dict.formats.intro}
         </p>
 
         <div className="mt-14 grid gap-px bg-white/10 md:grid-cols-2">
-          {FORMAT_OPTIONS.map((format) => (
-            <article
-              key={format.id}
-              className="bg-void px-6 py-10 md:px-10 md:py-12"
-            >
+          {dict.formats.items.map((format) => (
+            <article key={format.id} className="bg-void px-6 py-10 md:px-10 md:py-12">
               <p className="font-display text-[0.65rem] uppercase tracking-[0.28em] text-splash">
                 {format.label}
               </p>
