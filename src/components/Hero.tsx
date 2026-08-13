@@ -1,5 +1,5 @@
 import { MediaImage } from "@/components/MediaImage";
-import { HERO_MEDIA, SITE } from "@/lib/content";
+import { AI_IMAGE_NOTICE, HERO_MEDIA, SITE } from "@/lib/content";
 
 export function Hero() {
   return (
@@ -64,6 +64,12 @@ export function Hero() {
             Formate →
           </a>
         </div>
+        <p className="reveal-up-delay-3 mt-8 max-w-xl text-[0.7rem] leading-relaxed text-titanium-dim/80 md:text-xs">
+          {AI_IMAGE_NOTICE}{" "}
+          <a href="/impressum#bildhinweis" className="underline-offset-2 hover:text-titanium hover:underline">
+            Mehr
+          </a>
+        </p>
       </div>
     </header>
   );

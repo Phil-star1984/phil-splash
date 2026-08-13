@@ -24,6 +24,10 @@ export const SITE = {
     "In wenigen Minuten entsteht eine klare Strichzeichnung. Live sichtbar für das gesamte Event: entweder als Lichtprojektion an der Architektur oder als Übertragung auf Screen und LED-Wall. Persönlich für den Gast. Präsent für die Marke.",
 } as const;
 
+/** Single site-wide AI imagery disclosure (Art. 50 AI Act / deployer transparency). */
+export const AI_IMAGE_NOTICE =
+  "Bildbeispiele auf dieser Seite sind KI-gestützte Visualisierungen der Live-Performance — keine dokumentarischen Eventfotos.";
+
 export const CREDENTIALS = {
   years: "16+",
   portraitsCaptured: "300.000+",

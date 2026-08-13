@@ -108,6 +108,19 @@ export default function ImpressumPage() {
           </p>
         </section>
 
+        <section
+          id="bildhinweis"
+          className="mt-14 scroll-mt-24 space-y-4 text-base leading-relaxed text-titanium"
+        >
+          <h2 className="font-display text-xl font-bold text-signal">Hinweis zu Bildern</h2>
+          <p>
+            Bildbeispiele auf dieser Website sind KI-gestützte Visualisierungen der Live-Performance
+            von {SITE.name}. Sie dienen der Illustration von Ablauf, Wirkung und Formaten und sind
+            keine dokumentarischen Eventfotos. Die dargestellte Dienstleistung — Live-Zeichnung auf
+            dem iPad mit Übertragung auf Fassade, Wand oder Screen — findet real statt.
+          </p>
+        </section>
+
         <section className="mt-14 space-y-4 text-base leading-relaxed text-titanium">
           <h2 className="font-display text-xl font-bold text-signal">Datenschutz</h2>
           <p>

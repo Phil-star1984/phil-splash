@@ -34,6 +34,10 @@ export function SiteFooter() {
       </div>
       <p className="mt-8 text-xs text-titanium-dim/70">
         © {new Date().getFullYear()} {SITE.legalName} · {SITE.name}
+        <span className="mx-2 text-titanium-dim/40">·</span>
+        <Link href="/impressum#bildhinweis" className="hover:text-titanium">
+          Hinweis zu Bildern
+        </Link>
       </p>
     </footer>
   );
