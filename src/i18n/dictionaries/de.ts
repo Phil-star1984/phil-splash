@@ -20,7 +20,7 @@ const de: Dictionary = {
     description:
       "Phil Splash zeichnet Gäste live auf dem iPad und überträgt die Porträts in Echtzeit: per Videobeamer auf Fassade und Wand — oder auf mobilen Screen und LED-Wall. Für Firmenfeiern, Branding-Events und Galas.",
     descriptionLong:
-      "In wenigen Minuten entsteht eine klare Strichzeichnung. Live sichtbar für das gesamte Event: entweder als Lichtprojektion an der Architektur oder als Übertragung auf Screen und LED-Wall. Persönlich für den Gast. Präsent für die Marke.",
+      "In wenigen Minuten entsteht eine klare Strichzeichnung — individuell für den Gast, monumental für den Raum. Lichtprojektion an der Architektur oder Übertragung auf Screen und LED-Wall.",
     ctaPrimary: "Anfrage",
     ctaSecondary: "Formate →",
     aiNotice:
@@ -94,23 +94,43 @@ const de: Dictionary = {
   },
   videos: {
     eyebrow: "Dokumentation",
-    title: "Live-Zeichnung und Fassadenprojektion.",
+    title: "Live-Zeichnung und Lichtprojektion.",
     intro:
-      "Zwei Aufnahmen aus dem Einsatz: Schnellporträt auf dem iPad, Übertragung per Videobeamer auf Architektur — in Echtzeit.",
+      "Aufnahmen aus dem Einsatz: Schnellporträt auf dem iPad, kombiniert mit Videobeamer und Fassadenprojektion — in Echtzeit.",
     items: [
+      {
+        id: "z4QxvaOVccs",
+        title: "Zeichenaktion mit Lichtprojektion",
+        description:
+          "Live am iPad — das Porträt wird gleichzeitig als Lichtkunst an Architektur und Fläche sichtbar.",
+      },
+      {
+        id: "u6GdcMu1Jew",
+        title: "Live-Porträt und Fassadenlicht",
+        description:
+          "Weitere Dokumentation: Zeichnung und Projektion als eine gemeinsame Inszenierung für das Publikum.",
+      },
       {
         id: "_04IGBaICb4",
         title: "Live-Zeichnung mit Fassadenprojektion",
         description:
-          "Dokumentation einer Zeichenaktion: iPad-Schnellporträt in Echtzeit per Videobeamer an die Wand.",
+          "iPad-Schnellporträt in Echtzeit per Videobeamer an die Wand — klassisches Format-A-Beispiel.",
       },
       {
         id: "fOSJcEkOWxQ",
         title: "Lichtkunst im Großformat",
         description:
-          "Weiteres Live-Beispiel: Strichzeichnung als monumentale Projektion auf Architektur.",
+          "Strichzeichnung als monumentale Projektion auf Architektur — Licht statt Leinwand.",
       },
     ],
+  },
+  million: {
+    eyebrow: "Der Name",
+    title: "One in a million. For a million.",
+    body: "Viele Event-Formate nennen sich besonders. Hier steckt der Anspruch im Namen: Phil Splash — Der Millionen Maler — ist one in a million. Und er porträtiert auf dem Weg zu einer Million Gesichtern.",
+    bodySecondary:
+      "Jedes Live-Porträt ist ein Unikat. Fassade, Wand oder Screen machen daraus eine Inszenierung, die so kaum ein zweites Mal vorkommt — persönlich für den Gast, präsent für die Marke.",
+    mark: "Gesichter — das Ziel hinter dem Namen",
   },
   screen: {
     eyebrow: "Format B",
@@ -205,10 +225,10 @@ const de: Dictionary = {
   origin: {
     eyebrow: "Der Künstler",
     title: "Von der U-Bahn zur Fassade.",
-    p1: "Seit 2010 porträtiert Phil Splash Menschen — begonnen in der Münchner U-Bahn. Die Presse prägte später den Namen „Der Millionen Maler“. Das Ziel: eine Million Gesichter.",
+    p1: "Seit 2010 porträtiert Phil Splash Menschen — begonnen in der Münchner U-Bahn. Die Presse prägte später den Namen „Der Millionen Maler“.",
     p2: "Bis heute entstanden {portraits} Porträts. Live-Aktionen unter anderem für {clients}. Berichtet wurde unter anderem bei RTL, ZDF, Süddeutscher Zeitung und BILD.",
-    p3: "Dieselbe Haltung trifft heute auf Hochleistungs-Beamer und Eventarchitektur: Schnellzeichnung auf dem iPad, Übertragung an Wand, Fassade oder Screen — persönlich für den Gast, präsent für den Raum.",
-    targetLabel: "Gesichter — das Ziel hinter dem Namen",
+    p3: "Dieselbe Haltung trifft heute auf Hochleistungs-Beamer und Eventarchitektur: Schnellzeichnung auf dem iPad, Übertragung an Wand, Fassade oder Screen.",
+    targetLabel: "",
   },
   offer: {
     eyebrow: "Unterlage",
@@ -260,6 +280,7 @@ const de: Dictionary = {
   },
   youtube: {
     play: "Video abspielen",
+    openOnYoutube: "Auf YouTube ansehen",
   },
 };
 

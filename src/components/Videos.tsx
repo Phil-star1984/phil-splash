@@ -40,6 +40,14 @@ export function Videos({ dict }: { dict: Dictionary }) {
               <p className="mt-2 text-sm leading-relaxed text-titanium md:text-base">
                 {video.description}
               </p>
+              <a
+                href={`https://www.youtube.com/watch?v=${video.id}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-4 inline-flex text-[0.68rem] uppercase tracking-[0.22em] text-laser transition-colors hover:text-signal"
+              >
+                {dict.youtube.openOnYoutube} →
+              </a>
             </div>
           </article>
         ))}

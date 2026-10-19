@@ -58,6 +58,13 @@ export type Dictionary = {
       description: string;
     }>;
   };
+  million: {
+    eyebrow: string;
+    title: string;
+    body: string;
+    bodySecondary: string;
+    mark: string;
+  };
   screen: {
     eyebrow: string;
     title: string;
@@ -131,5 +138,6 @@ export type Dictionary = {
   };
   youtube: {
     play: string;
+    openOnYoutube: string;
   };
 };

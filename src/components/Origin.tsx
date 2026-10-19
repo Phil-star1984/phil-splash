@@ -11,10 +11,9 @@ export function Origin({ dict }: { dict: Dictionary }) {
     <section
       id="origin"
       aria-labelledby="origin-heading"
-      className="section-defer relative overflow-hidden border-t border-white/5 bg-void"
+      className="section-defer relative border-t border-white/5 bg-void"
     >
-      <div className="beam-veil absolute inset-0 opacity-70" aria-hidden />
-      <div className="relative mx-auto max-w-5xl px-6 py-24 md:px-10 md:py-32 lg:px-14">
+      <div className="mx-auto max-w-5xl px-6 py-24 md:px-10 md:py-32 lg:px-14">
         <p className="font-display text-[0.7rem] uppercase tracking-[0.32em] text-splash">
           {dict.origin.eyebrow}
         </p>
@@ -29,13 +28,6 @@ export function Origin({ dict }: { dict: Dictionary }) {
           <p>{p2}</p>
           <p>{dict.origin.p3}</p>
         </div>
-
-        <p className="font-display mt-16 border-t border-white/10 pt-10 text-[clamp(2.8rem,10vw,7rem)] leading-none font-bold tracking-[-0.04em] text-signal">
-          {CREDENTIALS.target}
-          <span className="mt-4 block font-display text-[0.72rem] font-medium uppercase tracking-[0.35em] text-laser md:text-sm">
-            {dict.origin.targetLabel}
-          </span>
-        </p>
       </div>
     </section>
   );

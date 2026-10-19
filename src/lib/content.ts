@@ -38,8 +38,18 @@ export const GEO_CLUSTERS = [
   "Live Portrait LED Screen Entertainment",
 ] as const;
 
+/** Landscape hero slides — crossfade in header (first = LCP priority). */
+export const HERO_SLIDES = [
+  "/media/call_fUG0wZIAn8DWBemEicLWe2VC.jpg",
+  "/media/facade_courtyard_projection_landscape.jpg",
+  "/media/call_9jaYJQS2fgXnIoALx7Ng02SE.jpg",
+  "/media/02_industrial_courtyard_moustache_laugh_1920x1080.jpg",
+  "/media/04_observatory_balcony_platinum_pixie_1920x1080.jpg",
+  "/media/08_rammed_earth_afro_white_suit_1920x1080.jpg",
+] as const;
+
 export const HERO_MEDIA = {
-  src: "/media/call_fUG0wZIAn8DWBemEicLWe2VC.jpg",
+  src: HERO_SLIDES[0],
 } as const;
 
 export const RITUAL_MEDIA = [

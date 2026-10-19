@@ -10,13 +10,6 @@
   --splash: #ff2bd6;
   --splash-soft: rgba(255, 43, 214, 0.16);
   --signal: #e8eef5;
-  --beam: linear-gradient(
-    115deg,
-    transparent 0%,
-    rgba(61, 255, 252, 0.08) 42%,
-    rgba(255, 43, 214, 0.1) 58%,
-    transparent 100%
-  );
 }
 
 @theme inline {
@@ -65,18 +58,6 @@ body {
   font-family: var(--font-space-grotesk), sans-serif;
 }
 
-.projection-canvas {
-  background:
-    radial-gradient(ellipse 80% 55% at 70% 20%, var(--splash-soft), transparent 55%),
-    radial-gradient(ellipse 70% 50% at 15% 80%, var(--laser-soft), transparent 50%),
-    var(--void);
-}
-
-.beam-veil {
-  background: var(--beam);
-  pointer-events: none;
-}
-
 .laser-line {
   height: 1px;
   background: linear-gradient(
@@ -88,59 +69,62 @@ body {
   );
 }
 
+/* Soft frosted veil behind hero copy — image stays visible, text stays readable */
+.hero-copy-frost {
+  border-radius: 1.25rem;
+  background: linear-gradient(
+    115deg,
+    rgba(0, 0, 0, 0.55) 0%,
+    rgba(0, 0, 0, 0.32) 55%,
+    rgba(0, 0, 0, 0.12) 100%
+  );
+  backdrop-filter: blur(28px) saturate(1.15);
+  -webkit-backdrop-filter: blur(28px) saturate(1.15);
+  mask-image: linear-gradient(
+    to right,
+    black 0%,
+    black 72%,
+    transparent 100%
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    black 0%,
+    black 72%,
+    transparent 100%
+  );
+}
+
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  .hero-copy-frost {
+    background: rgba(0, 0, 0, 0.72);
+  }
+}
+
+/* Light text reveal — no blur (expensive on large LCP) */
 .reveal-up {
-  animation: reveal-up 1.1s cubic-bezier(0.16, 1, 0.3, 1) both;
+  animation: reveal-up 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
 .reveal-up-delay-1 {
-  animation: reveal-up 1.1s cubic-bezier(0.16, 1, 0.3, 1) 0.15s both;
+  animation: reveal-up 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.08s both;
 }
 
 .reveal-up-delay-2 {
-  animation: reveal-up 1.1s cubic-bezier(0.16, 1, 0.3, 1) 0.3s both;
+  animation: reveal-up 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.16s both;
 }
 
 .reveal-up-delay-3 {
-  animation: reveal-up 1.1s cubic-bezier(0.16, 1, 0.3, 1) 0.45s both;
-}
-
-.projection-scan {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    180deg,
-    transparent 0%,
-    color-mix(in srgb, var(--laser) 12%, transparent) 48%,
-    transparent 100%
-  );
-  mix-blend-mode: screen;
-  animation: scan-beam 6.5s ease-in-out infinite;
-  pointer-events: none;
-  opacity: 0.55;
+  animation: reveal-up 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.24s both;
 }
 
 @keyframes reveal-up {
   from {
     opacity: 0;
-    transform: translateY(28px);
-    filter: blur(6px);
+    transform: translateY(16px);
   }
   to {
     opacity: 1;
     transform: translateY(0);
-    filter: blur(0);
-  }
-}
-
-@keyframes scan-beam {
-  0%,
-  100% {
-    transform: translateY(-40%);
-    opacity: 0.15;
-  }
-  50% {
-    transform: translateY(40%);
-    opacity: 0.55;
   }
 }
 
@@ -148,12 +132,10 @@ body {
   .reveal-up,
   .reveal-up-delay-1,
   .reveal-up-delay-2,
-  .reveal-up-delay-3,
-  .projection-scan {
+  .reveal-up-delay-3 {
     animation: none !important;
     opacity: 1 !important;
     transform: none !important;
-    filter: none !important;
   }
 }
 

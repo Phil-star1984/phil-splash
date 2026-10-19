@@ -2,6 +2,7 @@ import { Access } from "@/components/Access";
 import { Formats } from "@/components/Formats";
 import { Hero } from "@/components/Hero";
 import { MachineFactRail } from "@/components/MachineFactRail";
+import { Million } from "@/components/Million";
 import { OfferDownload } from "@/components/OfferDownload";
 import { Origin } from "@/components/Origin";
 import { Proof } from "@/components/Proof";
@@ -34,6 +35,7 @@ export default async function HomePage({
         <ScreenFormat dict={dict} />
         <Proof dict={dict} />
         <Origin dict={dict} />
+        <Million dict={dict} />
         <OfferDownload dict={dict} />
         <Access dict={dict} />
       </main>

@@ -20,7 +20,7 @@ const en: Dictionary = {
     description:
       "Phil Splash draws guests live on iPad and displays the portraits in real time — via video projector onto facade and wall, or on a mobile screen and LED wall. For corporate events, branding moments, and galas.",
     descriptionLong:
-      "Within a few minutes, a clear line drawing takes shape. Visible live for the entire event: as light projected onto architecture, or transmitted to screen and LED wall. Personal for the guest. Present for the brand.",
+      "Within a few minutes, a clear line drawing takes shape — personal for the guest, monumental for the room. Light projection onto architecture, or transmission to screen and LED wall.",
     ctaPrimary: "Inquire",
     ctaSecondary: "Formats →",
     aiNotice:
@@ -94,23 +94,43 @@ const en: Dictionary = {
   },
   videos: {
     eyebrow: "Documentation",
-    title: "Live drawing and facade projection.",
+    title: "Live drawing and light projection.",
     intro:
-      "Two recordings from the field: speed portrait on iPad, transmitted by video projector onto architecture — in real time.",
+      "Recordings from the field: speed portrait on iPad, combined with video projector and facade projection — in real time.",
     items: [
+      {
+        id: "z4QxvaOVccs",
+        title: "Drawing action with light projection",
+        description:
+          "Live on iPad — the portrait becomes visible at the same time as light art on architecture and surface.",
+      },
+      {
+        id: "u6GdcMu1Jew",
+        title: "Live portrait and facade light",
+        description:
+          "Further documentation: drawing and projection as one shared staging for the audience.",
+      },
       {
         id: "_04IGBaICb4",
         title: "Live drawing with facade projection",
         description:
-          "Documentation of a drawing action: iPad speed portrait projected onto the wall in real time.",
+          "iPad speed portrait projected onto the wall in real time — a classic Format A example.",
       },
       {
         id: "fOSJcEkOWxQ",
         title: "Large-format light art",
         description:
-          "Another live example: line drawing as monumental projection onto architecture.",
+          "Line drawing as monumental projection onto architecture — light instead of canvas.",
       },
     ],
+  },
+  million: {
+    eyebrow: "The name",
+    title: "One in a million. For a million.",
+    body: "Many event formats call themselves special. Here the claim lives in the name: Phil Splash — The Million Painter — is one in a million. And he is portraiting his way toward a million faces.",
+    bodySecondary:
+      "Every live portrait is a unique piece. Facade, wall, or screen turns it into a staging you rarely experience twice — personal for the guest, present for the brand.",
+    mark: "Faces — the goal behind the name",
   },
   screen: {
     eyebrow: "Format B",
@@ -205,10 +225,10 @@ const en: Dictionary = {
   origin: {
     eyebrow: "The artist",
     title: "From the subway to the facade.",
-    p1: "Since 2010, Phil Splash has been portraying people — beginning in the Munich subway. The press later coined the name “The Million Painter.” The goal: one million faces.",
+    p1: "Since 2010, Phil Splash has been portraying people — beginning in the Munich subway. The press later coined the name “The Million Painter.”",
     p2: "To date, {portraits} portraits have been created. Live actions include work for {clients}. Coverage has included RTL, ZDF, Süddeutsche Zeitung, and BILD.",
-    p3: "That same approach now meets high-power projectors and event architecture: speed drawing on iPad, transmission to wall, facade, or screen — personal for the guest, present for the room.",
-    targetLabel: "Faces — the goal behind the name",
+    p3: "That same approach now meets high-power projectors and event architecture: speed drawing on iPad, transmission to wall, facade, or screen.",
+    targetLabel: "",
   },
   offer: {
     eyebrow: "Leave-behind",
@@ -261,6 +281,7 @@ const en: Dictionary = {
   },
   youtube: {
     play: "Play video",
+    openOnYoutube: "Watch on YouTube",
   },
 };
 

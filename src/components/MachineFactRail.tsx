@@ -1,6 +1,8 @@
 import { CREDENTIALS, GEO_CLUSTERS, SITE } from "@/lib/content";
 
 const VIDEO_URLS = [
+  "https://www.youtube.com/watch?v=z4QxvaOVccs",
+  "https://www.youtube.com/watch?v=u6GdcMu1Jew",
   "https://www.youtube.com/watch?v=_04IGBaICb4",
   "https://www.youtube.com/watch?v=fOSJcEkOWxQ",
 ];
