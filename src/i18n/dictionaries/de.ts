@@ -28,9 +28,8 @@ const de: Dictionary = {
     navLabel: "Galerie-Navigation",
     navOverview: "Alle Porträts",
     navAlbums: "Alben",
-    overviewHint: "Download-Icon unten rechts speichert das Einzelbild. Tippen öffnet die Großansicht.",
-    albumsIntro:
-      "Jedes Album hat einen eigenen Link. Über das Download-Icon speicherst du das ganze Album als ZIP.",
+    overviewHint: "Icons unten rechts: teilen oder speichern.",
+    albumsIntro: "Tippe ein Album an — oder nutze die Icons zum Teilen und ZIP-Download.",
     portraitsLabel: "Porträts",
     albumsLabel: "Alben",
     toAlbums: "Zu den Alben",

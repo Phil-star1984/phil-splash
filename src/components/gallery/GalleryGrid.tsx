@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { DownloadIcon } from "@/components/gallery/GalleryIcons";
-import { ShareMenu } from "@/components/gallery/ShareMenu";
+import { ShareMenu, galleryIconBtn } from "@/components/gallery/ShareMenu";
 import { downloadFile } from "@/lib/gallery-download";
 import type { Dictionary } from "@/i18n/dictionaries/types";
 
@@ -19,11 +19,9 @@ export type GalleryGridItem = {
 export function GalleryGrid({
   items,
   dict,
-  columns = "dense",
 }: {
   items: GalleryGridItem[];
   dict: Dictionary;
-  columns?: "dense" | "album";
 }) {
   const [active, setActive] = useState<GalleryGridItem | null>(null);
   const [busyId, setBusyId] = useState<string | null>(null);
@@ -32,11 +30,6 @@ export function GalleryGrid({
   useEffect(() => {
     setOrigin(window.location.origin);
   }, []);
-
-  const gridClass =
-    columns === "album"
-      ? "grid grid-cols-2 gap-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5"
-      : "grid grid-cols-2 gap-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6";
 
   async function handleDownload(item: GalleryGridItem) {
     setBusyId(item.id);
@@ -54,11 +47,11 @@ export function GalleryGrid({
 
   return (
     <>
-      <div className={gridClass}>
+      <div className="grid grid-cols-2 gap-1.5 sm:grid-cols-3 sm:gap-2 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-7">
         {items.map((item, index) => (
           <div
             key={`${item.albumSlug || "all"}-${item.id}`}
-            className="group relative aspect-[3/4] overflow-hidden bg-void-elevated ring-1 ring-white/0 transition duration-300 hover:ring-laser/45"
+            className="group relative aspect-[3/4] overflow-hidden bg-void-elevated"
           >
             <button
               type="button"
@@ -70,43 +63,44 @@ export function GalleryGrid({
                 src={item.thumb}
                 alt={item.title}
                 fill
-                sizes="(max-width:640px) 50vw, (max-width:1024px) 25vw, 16vw"
+                sizes="(max-width:640px) 50vw, (max-width:1024px) 25vw, 14vw"
                 quality={60}
                 className="object-cover transition duration-500 group-hover:scale-[1.03]"
-                priority={index < 8}
+                priority={index < 10}
               />
-              <span className="pointer-events-none absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent px-2.5 pb-2.5 pt-10 opacity-0 transition duration-300 group-hover:opacity-100 group-focus-visible:opacity-100">
-                <span className="block truncate pr-10 text-[0.65rem] uppercase tracking-[0.14em] text-signal">
-                  {item.title}
-                </span>
-                {item.albumTitle ? (
-                  <span className="mt-0.5 block truncate pr-10 text-[0.62rem] text-titanium-dim">
-                    {item.albumTitle}
-                  </span>
-                ) : null}
-              </span>
+              <span className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/55 via-transparent to-transparent opacity-70 transition group-hover:opacity-90" />
             </button>
 
-            <button
-              type="button"
-              onClick={(e) => {
-                e.stopPropagation();
-                void handleDownload(item);
-              }}
-              disabled={busyId === item.id}
-              className="absolute bottom-2 right-2 z-10 inline-flex h-8 w-8 items-center justify-center rounded-full bg-black/55 text-signal ring-1 ring-white/20 backdrop-blur-sm transition hover:bg-black/75 hover:text-laser disabled:opacity-50"
-              aria-label={dict.gallery.downloadImage}
-              title={dict.gallery.downloadImage}
-            >
-              <DownloadIcon />
-            </button>
+            <div className="absolute bottom-2 right-2 z-10 flex items-center gap-1.5 opacity-90 transition group-hover:opacity-100">
+              <ShareMenu
+                dict={dict}
+                url={shareUrl(item)}
+                title={item.title}
+                text={
+                  item.albumTitle ? `${item.title} — ${item.albumTitle}` : item.title
+                }
+              />
+              <button
+                type="button"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  void handleDownload(item);
+                }}
+                disabled={busyId === item.id}
+                className={galleryIconBtn}
+                aria-label={dict.gallery.downloadImage}
+                title={dict.gallery.downloadImage}
+              >
+                <DownloadIcon />
+              </button>
+            </div>
           </div>
         ))}
       </div>
 
       {active ? (
         <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/88 p-4 backdrop-blur-sm md:p-8"
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-4 backdrop-blur-sm md:p-8"
           role="dialog"
           aria-modal="true"
           aria-label={active.title}
@@ -116,7 +110,7 @@ export function GalleryGrid({
           }}
         >
           <div
-            className="relative flex max-h-full w-full max-w-5xl flex-col gap-4"
+            className="relative flex max-h-full w-full max-w-6xl flex-col gap-4"
             onClick={(e) => e.stopPropagation()}
           >
             <div className="relative mx-auto aspect-[3/4] w-full max-h-[78svh] overflow-hidden bg-void-elevated md:aspect-auto md:h-[78svh]">
@@ -124,7 +118,7 @@ export function GalleryGrid({
                 src={active.src}
                 alt={active.title}
                 fill
-                sizes="90vw"
+                sizes="92vw"
                 quality={75}
                 className="object-contain"
                 priority
@@ -137,7 +131,7 @@ export function GalleryGrid({
                   <p className="mt-1 text-xs text-titanium-dim">{active.albumTitle}</p>
                 ) : null}
               </div>
-              <div className="flex items-center gap-2 sm:gap-3">
+              <div className="flex items-center gap-2">
                 <ShareMenu
                   dict={dict}
                   url={shareUrl(active)}
@@ -152,10 +146,11 @@ export function GalleryGrid({
                   type="button"
                   disabled={busyId === active.id}
                   onClick={() => handleDownload(active)}
-                  className="inline-flex items-center gap-2 border border-laser/40 bg-laser/10 px-4 py-2.5 text-[0.68rem] uppercase tracking-[0.2em] text-laser transition hover:bg-laser/20 disabled:opacity-50"
+                  className={galleryIconBtn}
+                  aria-label={dict.gallery.downloadImage}
+                  title={dict.gallery.downloadImage}
                 >
                   <DownloadIcon />
-                  {busyId === active.id ? dict.gallery.downloading : dict.gallery.downloadImage}
                 </button>
                 <button
                   type="button"

@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { notFound } from "next/navigation";
 import { AlbumCard } from "@/components/gallery/AlbumCard";
 import { GalleryHeader } from "@/components/gallery/GalleryHeader";
@@ -43,26 +42,17 @@ export default async function GalleryAlbumsPage({
   return (
     <>
       <GalleryHeader dict={dict} locale={locale} active="albums" />
-      <main className="flex-1 bg-void px-6 py-10 md:px-10 md:py-14 lg:px-14">
-        <div className="mx-auto max-w-7xl">
-          <div className="mb-8 flex flex-wrap items-end justify-between gap-4">
-            <p className="max-w-2xl text-sm text-titanium">{dict.gallery.albumsIntro}</p>
-            <Link
-              href={`/${locale}/galerie`}
-              className="border border-laser/30 bg-laser/10 px-4 py-2.5 text-[0.68rem] uppercase tracking-[0.2em] text-laser transition hover:bg-laser/18"
-            >
-              {dict.gallery.allPortraitsCta}
-            </Link>
-          </div>
-
-          <ul className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-            {galleryAlbums.map((album) => (
-              <li key={album.slug}>
-                <AlbumCard album={album} dict={dict} locale={locale} />
-              </li>
-            ))}
-          </ul>
+      <main className="flex-1 bg-void">
+        <div className="px-6 py-4 md:px-10 lg:px-14">
+          <p className="max-w-2xl text-sm text-titanium-dim">{dict.gallery.albumsIntro}</p>
         </div>
+        <ul className="grid grid-cols-1 gap-1.5 px-1.5 pb-10 sm:grid-cols-2 sm:gap-2 sm:px-2 md:grid-cols-3 lg:grid-cols-4 lg:px-3">
+          {galleryAlbums.map((album) => (
+            <li key={album.slug}>
+              <AlbumCard album={album} dict={dict} locale={locale} />
+            </li>
+          ))}
+        </ul>
       </main>
       <SiteFooter dict={dict} locale={locale} />
     </>

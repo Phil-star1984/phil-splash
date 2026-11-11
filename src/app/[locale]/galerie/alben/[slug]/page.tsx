@@ -63,52 +63,43 @@ export default async function GalleryAlbumPage({
   return (
     <>
       <GalleryHeader dict={dict} locale={locale} active="album" />
-      <main className="flex-1 bg-void px-6 py-10 md:px-10 md:py-14 lg:px-14">
-        <div className="mx-auto max-w-7xl">
-          <div className="mb-8 flex flex-wrap items-end justify-between gap-5">
-            <div className="max-w-2xl">
-              <div className="flex flex-wrap items-center gap-x-5 gap-y-2 text-[0.68rem] uppercase tracking-[0.22em]">
-                <Link
-                  href={`/${locale}/galerie`}
-                  className="text-laser transition hover:text-signal"
-                >
-                  {dict.gallery.backToAllPortraits}
-                </Link>
-                <Link
-                  href={`/${locale}/galerie/alben`}
-                  className="text-titanium-dim transition hover:text-laser"
-                >
-                  ← {dict.gallery.backToAlbums}
-                </Link>
-              </div>
-              <h2 className="font-display mt-5 text-[clamp(1.85rem,4vw,2.85rem)] leading-[1.02] font-bold tracking-[-0.03em] text-signal">
-                {album.title}
-              </h2>
-              {album.description ? (
-                <p className="mt-3 text-sm text-titanium">{album.description}</p>
-              ) : null}
-              <p className="mt-2 text-[0.68rem] uppercase tracking-[0.2em] text-titanium-dim">
-                {album.count} {dict.gallery.portraitsLabel}
-              </p>
-            </div>
-            <div className="flex flex-wrap items-center gap-3">
-              <ShareMenu
-                dict={dict}
-                url={shareUrl}
-                title={album.title}
-                text={`${album.title} — Phil Splash Galerie`}
-              />
-              <AlbumDownloadButton
-                dict={dict}
-                zipName={`phil-splash-${album.slug}`}
-                files={zipFiles}
-              />
-            </div>
+      <main className="flex-1 bg-void">
+        <div className="flex flex-wrap items-end justify-between gap-4 px-6 py-5 md:px-10 lg:px-14">
+          <div className="min-w-0 max-w-3xl">
+            <Link
+              href={`/${locale}/galerie/alben`}
+              className="text-[0.68rem] uppercase tracking-[0.22em] text-titanium-dim transition hover:text-laser"
+            >
+              ← {dict.gallery.backToAlbums}
+            </Link>
+            <h2 className="font-display mt-3 text-[clamp(1.85rem,4vw,2.85rem)] leading-[1.02] font-bold tracking-[-0.03em] text-signal">
+              {album.title}
+            </h2>
+            {album.description ? (
+              <p className="mt-2 text-sm text-titanium">{album.description}</p>
+            ) : null}
+            <p className="mt-2 text-[0.68rem] uppercase tracking-[0.2em] text-titanium-dim">
+              {album.count} {dict.gallery.portraitsLabel}
+            </p>
           </div>
+          <div className="flex items-center gap-1.5">
+            <ShareMenu
+              dict={dict}
+              url={shareUrl}
+              title={album.title}
+              text={`${album.title} — Phil Splash Galerie`}
+            />
+            <AlbumDownloadButton
+              dict={dict}
+              zipName={`phil-splash-${album.slug}`}
+              files={zipFiles}
+            />
+          </div>
+        </div>
 
+        <div className="px-1.5 pb-10 sm:px-2 md:px-2.5 lg:px-3">
           <GalleryGrid
             dict={dict}
-            columns="album"
             items={album.images.map((img) => ({
               id: img.id,
               title: img.title,

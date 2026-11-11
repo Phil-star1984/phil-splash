@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { GalleryViewSwitch } from "@/components/gallery/GalleryViewSwitch";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import type { Dictionary } from "@/i18n/dictionaries/types";
 import type { Locale } from "@/i18n/config";
@@ -16,10 +17,8 @@ export function GalleryHeader({
   locale: Locale;
   active: "overview" | "albums" | "album";
 }) {
-  const showBackToAll = active === "albums" || active === "album";
-
   return (
-    <header className="relative isolate overflow-hidden border-b border-white/8">
+    <header className="relative isolate min-h-[11.5rem] overflow-hidden border-b border-white/8 md:min-h-[13.5rem]">
       <div className="absolute inset-0">
         <Image
           src={HEADER_IMAGE}
@@ -28,77 +27,51 @@ export function GalleryHeader({
           priority
           sizes="100vw"
           quality={60}
-          className="object-cover object-[center_28%]"
+          className="object-cover object-[center_30%]"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/55 to-black/35" />
-        <div className="absolute inset-0 bg-gradient-to-t from-void via-transparent to-black/40" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/45 to-black/25" />
+        <div className="absolute inset-0 bg-gradient-to-t from-void via-black/10 to-black/35" />
       </div>
 
-      <div className="relative z-10 px-6 py-4 md:px-10 lg:px-14">
-        <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-x-6 gap-y-3">
+      {/* Same full-bleed nav geometry as homepage Hero */}
+      <nav className="relative z-20 flex items-center justify-between gap-4 px-6 py-6 md:px-10 lg:px-14">
+        <Link
+          href={`/${locale}`}
+          className="font-display tracking-[0.18em] text-[0.7rem] uppercase text-titanium transition-colors hover:text-laser md:text-xs"
+        >
+          <span className="text-signal">{SITE.name}</span>
+          <span className="mx-3 text-titanium-dim">/</span>
+          <span>{dict.brand.alias}</span>
+        </Link>
+        <div className="flex items-center gap-5 md:gap-8">
+          <LanguageSwitcher locale={locale} label={dict.nav.languageLabel} />
           <Link
-            href={`/${locale}`}
-            className="font-display text-[0.68rem] uppercase tracking-[0.22em] text-titanium transition-colors hover:text-laser md:text-[0.72rem]"
+            href={`/${locale}/galerie`}
+            className="text-[0.7rem] uppercase tracking-[0.22em] text-laser md:text-xs"
+            aria-current="page"
           >
-            <span className="text-signal">{SITE.name}</span>
-            <span className="mx-2 text-titanium-dim/70">/</span>
-            <span>{dict.brand.alias}</span>
+            {dict.nav.gallery}
           </Link>
-
-          <nav
-            className="flex flex-wrap items-center gap-x-5 gap-y-2 text-[0.68rem] uppercase tracking-[0.22em] md:gap-x-6"
-            aria-label={dict.gallery.navLabel}
+          <Link
+            href={`/${locale}#access`}
+            className="text-[0.7rem] uppercase tracking-[0.22em] text-titanium transition-colors hover:text-laser md:text-xs"
           >
-            <Link
-              href={`/${locale}/galerie`}
-              className={
-                active === "overview"
-                  ? "text-laser"
-                  : "text-titanium transition-colors hover:text-signal"
-              }
-              aria-current={active === "overview" ? "page" : undefined}
-            >
-              {dict.gallery.navOverview}
-            </Link>
-            <Link
-              href={`/${locale}/galerie/alben`}
-              className={
-                active === "albums" || active === "album"
-                  ? "text-laser"
-                  : "text-titanium transition-colors hover:text-signal"
-              }
-              aria-current={active === "albums" ? "page" : undefined}
-            >
-              {dict.gallery.navAlbums}
-            </Link>
-            <LanguageSwitcher locale={locale} label={dict.nav.languageLabel} />
-            <Link
-              href={`/${locale}#access`}
-              className="hidden text-titanium transition-colors hover:text-laser sm:inline"
-            >
-              {dict.nav.inquire}
-            </Link>
-          </nav>
+            {dict.nav.inquire}
+          </Link>
         </div>
+      </nav>
 
-        <div className="mx-auto mt-5 max-w-7xl pb-1 md:mt-6">
-          {showBackToAll ? (
-            <Link
-              href={`/${locale}/galerie`}
-              className="mb-3 inline-flex text-[0.68rem] uppercase tracking-[0.22em] text-laser transition hover:text-signal"
-            >
-              {dict.gallery.backToAllPortraits}
-            </Link>
-          ) : null}
-          <p className="font-display text-[0.65rem] uppercase tracking-[0.32em] text-laser">
-            {dict.gallery.eyebrow}
-          </p>
-          <h1 className="font-display mt-2 max-w-3xl text-[clamp(1.45rem,3.2vw,2.15rem)] leading-[1.08] font-bold tracking-[-0.03em] text-signal">
-            {dict.gallery.title}
-          </h1>
-          <p className="mt-2 max-w-2xl text-[0.85rem] leading-relaxed text-titanium/90">
-            {dict.gallery.intro}
-          </p>
+      <div className="relative z-10 flex items-end px-6 pb-5 pt-2 md:px-10 md:pb-6 lg:px-14">
+        <div className="flex w-full flex-wrap items-end justify-between gap-4">
+          <div className="min-w-0 max-w-2xl">
+            <p className="font-display text-[0.65rem] uppercase tracking-[0.32em] text-laser">
+              {dict.gallery.eyebrow}
+            </p>
+            <h1 className="font-display mt-2 text-[clamp(1.35rem,2.8vw,1.9rem)] leading-[1.08] font-bold tracking-[-0.03em] text-signal">
+              {dict.gallery.title}
+            </h1>
+          </div>
+          <GalleryViewSwitch dict={dict} locale={locale} active={active} />
         </div>
       </div>
     </header>

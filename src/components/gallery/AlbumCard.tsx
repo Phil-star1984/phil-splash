@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { DownloadIcon } from "@/components/gallery/GalleryIcons";
-import { ShareMenu } from "@/components/gallery/ShareMenu";
+import { ShareMenu, galleryIconBtn } from "@/components/gallery/ShareMenu";
 import { downloadAlbumZip } from "@/lib/gallery-download";
 import type { Dictionary } from "@/i18n/dictionaries/types";
 import type { Locale } from "@/i18n/config";
@@ -49,9 +49,9 @@ export function AlbumCard({
     <div className="group relative">
       <Link
         href={`/${locale}/galerie/alben/${album.slug}`}
-        className="block outline-none"
+        className="block outline-none focus-visible:ring-2 focus-visible:ring-laser"
       >
-        <div className="relative aspect-[4/5] overflow-hidden bg-void-elevated ring-1 ring-white/8 transition duration-300 group-hover:ring-laser/45 group-focus-visible:ring-2 group-focus-visible:ring-laser">
+        <div className="relative aspect-[4/5] overflow-hidden bg-void-elevated">
           <Image
             src={album.cover}
             alt={album.title}
@@ -60,9 +60,9 @@ export function AlbumCard({
             quality={60}
             className="object-cover transition duration-500 group-hover:scale-[1.03]"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent" />
-          <div className="absolute inset-x-0 bottom-0 p-4 pr-14 md:p-5 md:pr-16">
-            <h2 className="font-display text-[clamp(1.2rem,2.4vw,1.65rem)] leading-[1.08] font-bold tracking-[-0.03em] text-signal">
+          <div className="absolute inset-0 bg-gradient-to-t from-black/88 via-black/25 to-transparent" />
+          <div className="absolute inset-x-0 bottom-0 p-5 pr-16 md:p-6 md:pr-20">
+            <h2 className="font-display text-[clamp(1.35rem,2.6vw,1.85rem)] leading-[1.05] font-bold tracking-[-0.03em] text-signal">
               {album.title}
             </h2>
             <p className="mt-2 text-[0.68rem] uppercase tracking-[0.18em] text-titanium-dim">
@@ -72,9 +72,8 @@ export function AlbumCard({
         </div>
       </Link>
 
-      <div className="absolute bottom-3 right-3 z-10 flex flex-col gap-2">
+      <div className="absolute bottom-4 right-4 z-10 flex items-center gap-1.5">
         <ShareMenu
-          compact
           dict={dict}
           url={shareUrl}
           title={album.title}
@@ -84,11 +83,11 @@ export function AlbumCard({
           type="button"
           onClick={onDownload}
           disabled={busy}
-          className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-black/60 text-signal ring-1 ring-white/20 backdrop-blur-sm transition hover:bg-black/80 hover:text-laser disabled:opacity-50"
+          className={galleryIconBtn}
           aria-label={dict.gallery.downloadAlbum}
           title={dict.gallery.downloadAlbum}
         >
-          <DownloadIcon className="h-4 w-4" />
+          <DownloadIcon />
         </button>
       </div>
     </div>

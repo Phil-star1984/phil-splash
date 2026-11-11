@@ -28,9 +28,8 @@ const en: Dictionary = {
     navLabel: "Gallery navigation",
     navOverview: "All portraits",
     navAlbums: "Albums",
-    overviewHint: "The download icon at the bottom right saves the single image. Tap for a large view.",
-    albumsIntro:
-      "Each album has its own link. Use the download icon to save the full album as a ZIP.",
+    overviewHint: "Icons at the bottom right: share or save.",
+    albumsIntro: "Tap an album — or use the icons to share and download as ZIP.",
     portraitsLabel: "portraits",
     albumsLabel: "albums",
     toAlbums: "Browse albums",

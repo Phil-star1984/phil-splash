@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { notFound } from "next/navigation";
 import { GalleryGrid } from "@/components/gallery/GalleryGrid";
 import { GalleryHeader } from "@/components/gallery/GalleryHeader";
@@ -43,25 +42,18 @@ export default async function GalleryOverviewPage({
   return (
     <>
       <GalleryHeader dict={dict} locale={locale} active="overview" />
-      <main className="flex-1 bg-void px-6 py-10 md:px-10 md:py-14 lg:px-14">
-        <div className="mx-auto max-w-7xl">
-          <div className="mb-8 flex flex-wrap items-end justify-between gap-4">
-            <div>
-              <p className="text-[0.68rem] uppercase tracking-[0.22em] text-titanium-dim">
-                {galleryImages.length} {dict.gallery.portraitsLabel}
-                <span className="mx-2 text-titanium-dim/40">·</span>
-                {galleryAlbums.length} {dict.gallery.albumsLabel}
-              </p>
-              <p className="mt-2 max-w-xl text-sm text-titanium">{dict.gallery.overviewHint}</p>
-            </div>
-            <Link
-              href={`/${locale}/galerie/alben`}
-              className="text-[0.68rem] uppercase tracking-[0.22em] text-laser transition hover:text-signal"
-            >
-              {dict.gallery.toAlbums} →
-            </Link>
-          </div>
-
+      <main className="flex-1 bg-void">
+        <div className="flex items-center justify-between gap-4 px-6 py-4 md:px-10 lg:px-14">
+          <p className="text-[0.68rem] uppercase tracking-[0.22em] text-titanium-dim">
+            {galleryImages.length} {dict.gallery.portraitsLabel}
+            <span className="mx-2 text-titanium-dim/40">·</span>
+            {galleryAlbums.length} {dict.gallery.albumsLabel}
+          </p>
+          <p className="hidden max-w-md text-right text-xs text-titanium-dim sm:block">
+            {dict.gallery.overviewHint}
+          </p>
+        </div>
+        <div className="px-1.5 pb-10 sm:px-2 md:px-2.5 lg:px-3">
           <GalleryGrid
             dict={dict}
             items={galleryImages.map((img) => ({
