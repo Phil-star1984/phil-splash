@@ -33,6 +33,7 @@ export function middleware(request: NextRequest) {
   if (
     pathname.startsWith("/_next") ||
     pathname.startsWith("/media") ||
+    pathname.startsWith("/gallery") ||
     pathname.startsWith("/downloads") ||
     pathname.startsWith("/llms.txt") ||
     pathname.startsWith("/.well-known") ||

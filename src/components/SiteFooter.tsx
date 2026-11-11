@@ -14,6 +14,9 @@ export function SiteFooter({ dict, locale }: { dict: Dictionary; locale: Locale 
           <p className="mt-2 text-sm text-titanium-dim">{dict.footer.tagline}</p>
         </div>
         <div className="flex flex-wrap gap-6 text-[0.68rem] uppercase tracking-[0.22em] text-titanium-dim">
+          <Link href={`/${locale}/galerie`} className="hover:text-laser">
+            {dict.footer.gallery}
+          </Link>
           <a
             href="/downloads/phil-splash-live-portraets-fassadenprojektion.pdf"
             className="hover:text-laser"

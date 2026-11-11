@@ -1,5 +1,6 @@
 import { SITE } from "@/lib/content";
 import { locales } from "@/i18n/config";
+import { galleryAlbums } from "@/lib/gallery-catalog";
 
 export default function sitemap() {
   const now = new Date();
@@ -13,6 +14,26 @@ export default function sitemap() {
         languages: Object.fromEntries(locales.map((l) => [l, `${SITE.url}/${l}`])),
       },
     })),
+    ...locales.map((locale) => ({
+      url: `${SITE.url}/${locale}/galerie`,
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.85,
+    })),
+    ...locales.map((locale) => ({
+      url: `${SITE.url}/${locale}/galerie/alben`,
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.8,
+    })),
+    ...locales.flatMap((locale) =>
+      galleryAlbums.map((album) => ({
+        url: `${SITE.url}/${locale}/galerie/alben/${album.slug}`,
+        lastModified: now,
+        changeFrequency: "weekly" as const,
+        priority: 0.7,
+      })),
+    ),
     ...locales.map((locale) => ({
       url: `${SITE.url}/${locale}/impressum`,
       lastModified: now,

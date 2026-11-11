@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { HeroSlider } from "@/components/HeroSlider";
 import type { Dictionary } from "@/i18n/dictionaries/types";
@@ -23,6 +24,12 @@ export function Hero({ dict, locale }: { dict: Dictionary; locale: Locale }) {
         </div>
         <div className="flex items-center gap-5 md:gap-8">
           <LanguageSwitcher locale={locale} label={dict.nav.languageLabel} />
+          <Link
+            href={`/${locale}/galerie`}
+            className="text-[0.7rem] uppercase tracking-[0.22em] text-titanium transition-colors hover:text-laser md:text-xs"
+          >
+            {dict.nav.gallery}
+          </Link>
           <a
             href="#access"
             className="text-[0.7rem] uppercase tracking-[0.22em] text-titanium transition-colors hover:text-laser md:text-xs"

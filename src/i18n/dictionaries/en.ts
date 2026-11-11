@@ -14,6 +14,40 @@ const en: Dictionary = {
   nav: {
     inquire: "Inquire",
     languageLabel: "Language",
+    gallery: "Gallery",
+  },
+  gallery: {
+    eyebrow: "Gallery",
+    title: "Live portraits to view & download",
+    intro:
+      "Every uploaded portrait at a glance — or sorted into event albums. Save single images or full albums directly.",
+    metaTitle: "Gallery — Live portraits",
+    metaDescription:
+      "Phil Splash live portrait gallery: overview of all drawings, event albums with shareable links, download single images or full albums.",
+    albumsMetaTitle: "Albums — Gallery",
+    navLabel: "Gallery navigation",
+    navOverview: "All portraits",
+    navAlbums: "Albums",
+    overviewHint: "The download icon at the bottom right saves the single image. Tap for a large view.",
+    albumsIntro:
+      "Each album has its own link. Use the download icon to save the full album as a ZIP.",
+    portraitsLabel: "portraits",
+    albumsLabel: "albums",
+    toAlbums: "Browse albums",
+    backToAlbums: "All albums",
+    backToAllPortraits: "← All portraits",
+    allPortraitsCta: "Show all portraits",
+    downloadImage: "Download image",
+    downloadAlbum: "Album as ZIP",
+    preparingZip: "Preparing ZIP…",
+    downloading: "Downloading…",
+    downloadError: "Download failed",
+    close: "Close",
+    share: "Share",
+    shareEmail: "By email",
+    shareWhatsApp: "WhatsApp",
+    copyLink: "Copy link",
+    linkCopied: "Link copied",
   },
   hero: {
     tagline: "Live portraits. Monumental in the room.",
@@ -265,6 +299,7 @@ const en: Dictionary = {
     contact: "Contact",
     impressum: "Legal notice",
     imageNotice: "Image notice",
+    gallery: "Gallery",
   },
   impressum: {
     title: "Legal notice",

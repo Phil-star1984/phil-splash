@@ -25,6 +25,10 @@ const nextConfig: NextConfig = {
         headers: [{ key: "Cache-Control", value: longCache }],
       },
       {
+        source: "/gallery/:path*",
+        headers: [{ key: "Cache-Control", value: longCache }],
+      },
+      {
         source: "/downloads/:path*",
         headers: [{ key: "Cache-Control", value: longCache }],
       },

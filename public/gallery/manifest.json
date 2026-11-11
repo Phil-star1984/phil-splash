@@ -1,0 +1,55 @@
+{
+  "importedAt": "2026-11-11T20:24:54.598Z",
+  "albumCount": 8,
+  "imageCount": 281,
+  "albums": [
+    {
+      "id": "D59fwX",
+      "slug": "vietnam-2026",
+      "title": "Vietnam 2026",
+      "count": 16
+    },
+    {
+      "id": "Y7yN4s",
+      "slug": "vr-bank-wuerzburg",
+      "title": "VR Bank Würzburg",
+      "count": 45
+    },
+    {
+      "id": "BGzH3H",
+      "slug": "servicenow",
+      "title": "ServiceNow",
+      "count": 21
+    },
+    {
+      "id": "TDjxSB",
+      "slug": "somnomedics-25-jahre",
+      "title": "Somnomedics 25 Jahre",
+      "count": 34
+    },
+    {
+      "id": "dWByDW",
+      "slug": "roedl-partner-sommerfest",
+      "title": "Rödl & Partner Sommerfest",
+      "count": 31
+    },
+    {
+      "id": "HX3Rx1",
+      "slug": "loungevoo-transportlogistic",
+      "title": "Loungevoo TransportLogistic",
+      "count": 29
+    },
+    {
+      "id": "nrG33v",
+      "slug": "60j-jubilaeum",
+      "title": "60J_Jubiläum",
+      "count": 22
+    },
+    {
+      "id": "GxTSKm",
+      "slug": "hochzeit-tabea-maxi",
+      "title": "Hochzeit Tabea & Maxi",
+      "count": 83
+    }
+  ]
+}

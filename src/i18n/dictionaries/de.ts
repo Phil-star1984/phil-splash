@@ -14,6 +14,40 @@ const de: Dictionary = {
   nav: {
     inquire: "Anfragen",
     languageLabel: "Sprache",
+    gallery: "Galerie",
+  },
+  gallery: {
+    eyebrow: "Galerie",
+    title: "Live-Porträts zum Ansehen & Downloaden",
+    intro:
+      "Alle hochgeladenen Porträts auf einen Blick — oder nach Event-Alben sortiert. Einzelbilder und komplette Alben lassen sich direkt speichern.",
+    metaTitle: "Galerie — Live-Porträts",
+    metaDescription:
+      "Galerie der Live-Porträts von Phil Splash: Überblick aller Zeichnungen, Event-Alben mit eigenem Link, Download einzelner Bilder oder ganzer Alben.",
+    albumsMetaTitle: "Alben — Galerie",
+    navLabel: "Galerie-Navigation",
+    navOverview: "Alle Porträts",
+    navAlbums: "Alben",
+    overviewHint: "Download-Icon unten rechts speichert das Einzelbild. Tippen öffnet die Großansicht.",
+    albumsIntro:
+      "Jedes Album hat einen eigenen Link. Über das Download-Icon speicherst du das ganze Album als ZIP.",
+    portraitsLabel: "Porträts",
+    albumsLabel: "Alben",
+    toAlbums: "Zu den Alben",
+    backToAlbums: "Alle Alben",
+    backToAllPortraits: "← Alle Porträts",
+    allPortraitsCta: "Alle Porträts anzeigen",
+    downloadImage: "Bild laden",
+    downloadAlbum: "Album als ZIP",
+    preparingZip: "ZIP wird erstellt…",
+    downloading: "Lädt…",
+    downloadError: "Download fehlgeschlagen",
+    close: "Schließen",
+    share: "Teilen",
+    shareEmail: "Per E-Mail",
+    shareWhatsApp: "WhatsApp",
+    copyLink: "Link kopieren",
+    linkCopied: "Link kopiert",
   },
   hero: {
     tagline: "Live-Porträts. Monumental im Raum.",
@@ -264,6 +298,7 @@ const de: Dictionary = {
     contact: "Kontakt",
     impressum: "Impressum",
     imageNotice: "Hinweis zu Bildern",
+    gallery: "Galerie",
   },
   impressum: {
     title: "Impressum",

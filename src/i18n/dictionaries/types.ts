@@ -11,6 +11,37 @@ export type Dictionary = {
   nav: {
     inquire: string;
     languageLabel: string;
+    gallery: string;
+  };
+  gallery: {
+    eyebrow: string;
+    title: string;
+    intro: string;
+    metaTitle: string;
+    metaDescription: string;
+    albumsMetaTitle: string;
+    navLabel: string;
+    navOverview: string;
+    navAlbums: string;
+    overviewHint: string;
+    albumsIntro: string;
+    portraitsLabel: string;
+    albumsLabel: string;
+    toAlbums: string;
+    backToAlbums: string;
+    backToAllPortraits: string;
+    allPortraitsCta: string;
+    downloadImage: string;
+    downloadAlbum: string;
+    preparingZip: string;
+    downloading: string;
+    downloadError: string;
+    close: string;
+    share: string;
+    shareEmail: string;
+    shareWhatsApp: string;
+    copyLink: string;
+    linkCopied: string;
   };
   hero: {
     tagline: string;
@@ -124,6 +155,7 @@ export type Dictionary = {
     contact: string;
     impressum: string;
     imageNotice: string;
+    gallery: string;
   };
   impressum: {
     title: string;
