@@ -30,7 +30,7 @@ const de: Dictionary = {
     navAlbums: "Alben",
     overviewHint: "Icons unten rechts: teilen oder speichern.",
     albumsIntro:
-      "Event-Alben als eigene Reihen — teilen, öffnen oder als ZIP speichern. Geschützte Alben brauchen ein Passwort.",
+      "Alle Event-Alben als Liste — öffnen, teilen oder als ZIP speichern.",
     portraitsLabel: "Porträts",
     albumsLabel: "Alben",
     toAlbums: "Zu den Alben",

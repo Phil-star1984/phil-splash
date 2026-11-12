@@ -29,8 +29,7 @@ const en: Dictionary = {
     navOverview: "All portraits",
     navAlbums: "Albums",
     overviewHint: "Icons at the bottom right: share or save.",
-    albumsIntro:
-      "Event albums as editorial rows — share, open, or save as ZIP. Protected albums need a password.",
+    albumsIntro: "All event albums as a list — open, share, or save as ZIP.",
     portraitsLabel: "portraits",
     albumsLabel: "albums",
     toAlbums: "Browse albums",

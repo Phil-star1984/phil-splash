@@ -1,8 +1,11 @@
-/** Soft album gates (client-side). Not real security — images remain in /public. */
-
+/**
+ * Soft album gates (client-side). Not real security — images remain in /public.
+ *
+ * To protect an album later, add its slug here:
+ *   "mein-album-slug": "MeinPasswort2026",
+ */
 const albumPasswords: Record<string, string> = {
-  // Test album — share link + password "Kulturspeicher2026"
-  "koenig-bauer-kulturspeicher": "Kulturspeicher2026",
+  // empty on purpose — add entries only when an album should be gated
 };
 
 export function isAlbumProtected(slug: string): boolean {
