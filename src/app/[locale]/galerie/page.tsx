@@ -5,6 +5,7 @@ import { GalleryHeader } from "@/components/gallery/GalleryHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { getDictionary } from "@/i18n/get-dictionary";
 import { isLocale, type Locale } from "@/i18n/config";
+import { isAlbumProtected } from "@/lib/gallery-access";
 import { galleryAlbums, galleryImages } from "@/lib/gallery-catalog";
 
 export async function generateMetadata({
@@ -39,15 +40,18 @@ export default async function GalleryOverviewPage({
   const locale = raw as Locale;
   const dict = await getDictionary(locale);
 
+  const publicImages = galleryImages.filter((img) => !isAlbumProtected(img.albumSlug));
+  const publicAlbumCount = galleryAlbums.filter((a) => !isAlbumProtected(a.slug)).length;
+
   return (
     <>
       <GalleryHeader dict={dict} locale={locale} active="overview" />
       <main className="flex-1 bg-void">
         <div className="flex items-center justify-between gap-4 px-6 py-4 md:px-10 lg:px-14">
           <p className="text-[0.68rem] uppercase tracking-[0.22em] text-titanium-dim">
-            {galleryImages.length} {dict.gallery.portraitsLabel}
+            {publicImages.length} {dict.gallery.portraitsLabel}
             <span className="mx-2 text-titanium-dim/40">·</span>
-            {galleryAlbums.length} {dict.gallery.albumsLabel}
+            {publicAlbumCount} {dict.gallery.albumsLabel}
           </p>
           <p className="hidden max-w-md text-right text-xs text-titanium-dim sm:block">
             {dict.gallery.overviewHint}
@@ -56,7 +60,7 @@ export default async function GalleryOverviewPage({
         <div className="px-1.5 pb-10 sm:px-2 md:px-2.5 lg:px-3">
           <GalleryGrid
             dict={dict}
-            items={galleryImages.map((img) => ({
+            items={publicImages.map((img) => ({
               id: img.id,
               title: img.title,
               src: img.src,

@@ -42,6 +42,16 @@ export type Dictionary = {
     shareWhatsApp: string;
     copyLink: string;
     linkCopied: string;
+    lockedBadge: string;
+    lockedEyebrow: string;
+    lockedTitle: string;
+    lockedBody: string;
+    passwordLabel: string;
+    passwordPlaceholder: string;
+    passwordSubmit: string;
+    passwordError: string;
+    openAlbum: string;
+    openLockedAlbum: string;
   };
   hero: {
     tagline: string;

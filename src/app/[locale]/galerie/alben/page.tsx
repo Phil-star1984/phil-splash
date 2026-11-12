@@ -43,16 +43,20 @@ export default async function GalleryAlbumsPage({
     <>
       <GalleryHeader dict={dict} locale={locale} active="albums" />
       <main className="flex-1 bg-void">
-        <div className="px-6 py-4 md:px-10 lg:px-14">
+        <div className="px-6 py-5 md:px-10 lg:px-14">
           <p className="max-w-2xl text-sm text-titanium-dim">{dict.gallery.albumsIntro}</p>
         </div>
-        <ul className="grid grid-cols-1 gap-1.5 px-1.5 pb-10 sm:grid-cols-2 sm:gap-2 sm:px-2 md:grid-cols-3 lg:grid-cols-4 lg:px-3">
-          {galleryAlbums.map((album) => (
-            <li key={album.slug}>
-              <AlbumCard album={album} dict={dict} locale={locale} />
-            </li>
+        <div className="pb-12">
+          {galleryAlbums.map((album, index) => (
+            <AlbumCard
+              key={album.slug}
+              album={album}
+              dict={dict}
+              locale={locale}
+              index={index}
+            />
           ))}
-        </ul>
+        </div>
       </main>
       <SiteFooter dict={dict} locale={locale} />
     </>

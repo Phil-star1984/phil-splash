@@ -29,7 +29,8 @@ const de: Dictionary = {
     navOverview: "Alle Porträts",
     navAlbums: "Alben",
     overviewHint: "Icons unten rechts: teilen oder speichern.",
-    albumsIntro: "Tippe ein Album an — oder nutze die Icons zum Teilen und ZIP-Download.",
+    albumsIntro:
+      "Event-Alben als eigene Reihen — teilen, öffnen oder als ZIP speichern. Geschützte Alben brauchen ein Passwort.",
     portraitsLabel: "Porträts",
     albumsLabel: "Alben",
     toAlbums: "Zu den Alben",
@@ -47,6 +48,17 @@ const de: Dictionary = {
     shareWhatsApp: "WhatsApp",
     copyLink: "Link kopieren",
     linkCopied: "Link kopiert",
+    lockedBadge: "Passwort",
+    lockedEyebrow: "Geschütztes Album",
+    lockedTitle: "Passwort eingeben",
+    lockedBody:
+      "Dieses Album ist mit einem Passwort geschützt. Nach dem Freischalten kannst du ansehen und herunterladen.",
+    passwordLabel: "Album-Passwort",
+    passwordPlaceholder: "Passwort",
+    passwordSubmit: "Album öffnen",
+    passwordError: "Passwort stimmt nicht.",
+    openAlbum: "Album öffnen",
+    openLockedAlbum: "Mit Passwort öffnen",
   },
   hero: {
     tagline: "Live-Porträts. Monumental im Raum.",
