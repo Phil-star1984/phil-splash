@@ -29,8 +29,7 @@ const de: Dictionary = {
     navOverview: "Alle Porträts",
     navAlbums: "Alben",
     overviewHint: "Icons unten rechts: teilen oder speichern.",
-    albumsIntro:
-      "Alle Event-Alben als Liste — öffnen, teilen oder als ZIP speichern.",
+    albumsIntro: "Alle Event-Alben — öffnen, teilen oder als ZIP speichern.",
     portraitsLabel: "Porträts",
     albumsLabel: "Alben",
     toAlbums: "Zu den Alben",
@@ -43,6 +42,8 @@ const de: Dictionary = {
     downloading: "Lädt…",
     downloadError: "Download fehlgeschlagen",
     close: "Schließen",
+    prevImage: "Vorheriges Bild",
+    nextImage: "Nächstes Bild",
     share: "Teilen",
     shareEmail: "Per E-Mail",
     shareWhatsApp: "WhatsApp",

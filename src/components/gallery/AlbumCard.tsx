@@ -83,55 +83,45 @@ export function AlbumCard({
   const href = `/${locale}/galerie/alben/${album.slug}`;
 
   return (
-    <article className="group grid grid-cols-[5.5rem_minmax(0,1fr)] items-center gap-4 border-b border-white/8 py-5 sm:grid-cols-[7.5rem_minmax(0,1fr)_auto] sm:gap-6 md:grid-cols-[9rem_minmax(0,1fr)_auto] md:gap-8 md:py-6">
+    <article className="group flex h-full flex-col bg-void-elevated ring-1 ring-white/10 transition duration-300 hover:ring-laser/35">
       <Link
         href={href}
-        className="relative aspect-[3/4] overflow-hidden bg-void-elevated outline-none ring-1 ring-white/10 transition duration-300 group-hover:ring-laser/35 focus-visible:ring-2 focus-visible:ring-laser"
+        className="relative block aspect-[4/5] overflow-hidden outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-laser"
       >
         <Image
           src={album.cover}
-          alt=""
+          alt={album.title}
           fill
-          sizes="(max-width:640px) 88px, 144px"
+          sizes="(max-width:640px) 50vw, 25vw"
           quality={70}
-          className="object-cover transition duration-500 group-hover:scale-[1.04]"
+          className="object-cover transition duration-500 group-hover:scale-[1.03]"
           priority={index < 4}
         />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/35 via-transparent to-transparent opacity-80" />
+        {protectedAlbum ? (
+          <span className="absolute top-3 left-3 inline-flex items-center gap-1.5 bg-black/55 px-2 py-1 text-[0.58rem] uppercase tracking-[0.16em] text-signal backdrop-blur-sm">
+            <LockIcon className="h-3 w-3" />
+            {dict.gallery.lockedBadge}
+          </span>
+        ) : null}
       </Link>
 
-      <div className="min-w-0">
-        <div className="flex flex-wrap items-center gap-2.5">
-          <span className="font-display text-[0.62rem] uppercase tracking-[0.22em] text-titanium-dim">
-            {String(index + 1).padStart(2, "0")}
-          </span>
-          {protectedAlbum ? (
-            <span className="inline-flex items-center gap-1 text-[0.6rem] uppercase tracking-[0.16em] text-titanium-dim">
-              <LockIcon className="h-3 w-3" />
-              {dict.gallery.lockedBadge}
-            </span>
-          ) : null}
+      <div className="flex flex-1 flex-col gap-3 px-3.5 py-4 md:px-4 md:py-5">
+        <div className="min-w-0">
+          <h2 className="font-display text-[clamp(1rem,1.8vw,1.25rem)] leading-[1.15] font-semibold tracking-[-0.02em] text-signal">
+            <Link href={href} className="transition hover:text-laser">
+              {album.title}
+            </Link>
+          </h2>
+          <p className="mt-1.5 text-[0.62rem] uppercase tracking-[0.18em] text-titanium-dim">
+            {album.count} {dict.gallery.portraitsLabel}
+          </p>
         </div>
 
-        <h2 className="font-display mt-1.5 text-[clamp(1.15rem,2.4vw,1.65rem)] leading-[1.15] font-semibold tracking-[-0.02em] text-signal">
-          <Link href={href} className="transition hover:text-laser">
-            {album.title}
-          </Link>
-        </h2>
-
-        {album.description ? (
-          <p className="mt-1.5 max-w-xl truncate text-sm text-titanium-dim sm:whitespace-normal sm:line-clamp-2">
-            {album.description}
-          </p>
-        ) : null}
-
-        <p className="mt-2 text-[0.65rem] uppercase tracking-[0.18em] text-titanium-dim/80">
-          {album.count} {dict.gallery.portraitsLabel}
-        </p>
-
-        <div className="mt-3 flex items-center gap-2 sm:hidden">
+        <div className="mt-auto flex items-center gap-1.5">
           <Link
             href={href}
-            className="text-[0.65rem] uppercase tracking-[0.18em] text-laser transition hover:text-signal"
+            className="mr-auto text-[0.62rem] uppercase tracking-[0.18em] text-titanium transition hover:text-laser"
           >
             {protectedAlbum && !unlocked
               ? dict.gallery.openLockedAlbum
@@ -156,35 +146,6 @@ export function AlbumCard({
             </button>
           ) : null}
         </div>
-      </div>
-
-      <div className="hidden items-center gap-2 sm:flex">
-        <Link
-          href={href}
-          className="text-[0.65rem] uppercase tracking-[0.18em] text-titanium transition hover:text-laser"
-        >
-          {protectedAlbum && !unlocked
-            ? dict.gallery.openLockedAlbum
-            : dict.gallery.openAlbum}
-        </Link>
-        <ShareMenu
-          dict={dict}
-          url={shareUrl}
-          title={album.title}
-          text={`${album.title} — Phil Splash`}
-        />
-        {!protectedAlbum || unlocked ? (
-          <button
-            type="button"
-            onClick={onDownload}
-            disabled={busy}
-            className={galleryIconBtn}
-            aria-label={dict.gallery.downloadAlbum}
-            title={dict.gallery.downloadAlbum}
-          >
-            <DownloadIcon />
-          </button>
-        ) : null}
       </div>
     </article>
   );

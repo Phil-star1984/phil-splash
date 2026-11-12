@@ -37,6 +37,8 @@ export type Dictionary = {
     downloading: string;
     downloadError: string;
     close: string;
+    prevImage: string;
+    nextImage: string;
     share: string;
     shareEmail: string;
     shareWhatsApp: string;
