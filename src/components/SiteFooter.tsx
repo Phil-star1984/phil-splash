@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { SafeMailtoButton } from "@/components/SafeContact";
 import type { Dictionary } from "@/i18n/dictionaries/types";
 import type { Locale } from "@/i18n/config";
 import { SITE } from "@/lib/content";
@@ -24,9 +25,9 @@ export function SiteFooter({ dict, locale }: { dict: Dictionary; locale: Locale 
           >
             {dict.footer.offerPdf}
           </a>
-          <a href={`mailto:${SITE.email}`} className="hover:text-laser">
+          <SafeMailtoButton className="hover:text-laser">
             {dict.footer.contact}
-          </a>
+          </SafeMailtoButton>
           <Link href={`/${locale}/impressum`} className="hover:text-laser">
             {dict.footer.impressum}
           </Link>

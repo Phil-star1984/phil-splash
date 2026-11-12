@@ -1,9 +1,14 @@
+import {
+  SafeEmailText,
+  SafeMailtoButton,
+  SafePhoneText,
+  SafeTelButton,
+} from "@/components/SafeContact";
 import type { Dictionary } from "@/i18n/dictionaries/types";
 import { SITE } from "@/lib/content";
 
 export function Access({ dict }: { dict: Dictionary }) {
   const hasCal = Boolean(SITE.calUrl);
-  const mailtoHref = `mailto:${SITE.email}?subject=${encodeURIComponent(dict.access.mailtoSubject)}&body=${encodeURIComponent(dict.access.mailtoBody)}`;
 
   return (
     <section
@@ -33,12 +38,13 @@ export function Access({ dict }: { dict: Dictionary }) {
           {dict.access.bodySecondaryAfter}
         </p>
         <div className="mt-12 flex flex-col items-center justify-center gap-4 sm:flex-row">
-          <a
-            href={mailtoHref}
+          <SafeMailtoButton
+            subject={dict.access.mailtoSubject}
+            body={dict.access.mailtoBody}
             className="inline-flex min-w-[240px] items-center justify-center border border-laser bg-laser/15 px-8 py-4 text-[0.72rem] font-medium uppercase tracking-[0.24em] text-signal transition-all hover:bg-laser/25"
           >
             {dict.access.ctaEmail}
-          </a>
+          </SafeMailtoButton>
           {hasCal ? (
             <a
               href={SITE.calUrl}
@@ -49,16 +55,21 @@ export function Access({ dict }: { dict: Dictionary }) {
               {dict.access.ctaCal}
             </a>
           ) : (
-            <a
-              href={`tel:${SITE.phone}`}
-              className="inline-flex min-w-[240px] items-center justify-center border border-white/15 px-8 py-4 text-[0.72rem] uppercase tracking-[0.24em] text-titanium transition-colors hover:border-titanium hover:text-signal"
-            >
+            <SafeTelButton className="inline-flex min-w-[240px] items-center justify-center border border-white/15 px-8 py-4 text-[0.72rem] uppercase tracking-[0.24em] text-titanium transition-colors hover:border-titanium hover:text-signal">
               {dict.access.ctaCall}
-            </a>
+            </SafeTelButton>
           )}
         </div>
         <p className="mt-8 text-sm text-titanium-dim">
-          {SITE.email} · {SITE.phoneDisplay}
+          <SafeEmailText
+            className="transition hover:text-laser"
+            subject={dict.access.mailtoSubject}
+            body={dict.access.mailtoBody}
+          />
+          <span className="mx-2 text-titanium-dim/40" aria-hidden>
+            ·
+          </span>
+          <SafePhoneText className="transition hover:text-laser" />
         </p>
       </div>
     </section>

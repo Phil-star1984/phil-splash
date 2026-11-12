@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
+import { SafeEmailText, SafePhoneText } from "@/components/SafeContact";
 import { getDictionary } from "@/i18n/get-dictionary";
 import { isLocale, type Locale } from "@/i18n/config";
 import { SITE } from "@/lib/content";
@@ -83,14 +84,10 @@ export default async function ImpressumPage({
             Ust.-Idnr.: {SITE.vatId}
             <br />
             E-Mail:{" "}
-            <a className="text-laser hover:underline" href={`mailto:${SITE.email}`}>
-              {SITE.email}
-            </a>
+            <SafeEmailText className="text-laser hover:underline" />
             <br />
             Telefon:{" "}
-            <a className="text-laser hover:underline" href={`tel:${SITE.phone}`}>
-              {SITE.phoneDisplay}
-            </a>
+            <SafePhoneText className="text-laser hover:underline" />
           </p>
         </section>
 
