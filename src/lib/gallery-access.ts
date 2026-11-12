@@ -5,7 +5,8 @@
  *   "mein-album-slug": "MeinPasswort2026",
  */
 const albumPasswords: Record<string, string> = {
-  // empty on purpose — add entries only when an album should be gated
+  // Soft gate for share testing — not real security
+  "fastnacht-franken-2027-br": "Fastnacht2027",
 };
 
 export function isAlbumProtected(slug: string): boolean {
