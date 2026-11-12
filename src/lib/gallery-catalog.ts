@@ -25,276 +25,260 @@ export type GalleryFlatImage = GalleryImage & {
 
 export const galleryAlbums: GalleryAlbum[] = [
   {
-    "id": "local-kb-kulturspeicher",
-    "slug": "koenig-bauer-kulturspeicher",
-    "title": "König & Bauer · Kulturspeicher",
-    "description": "Event-Porträts König & Bauer im Kulturspeicher",
-    "cover": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0349.jpg",
-    "count": 33,
+    "id": "local-fif-2027-br",
+    "slug": "fastnacht-franken-2027-br",
+    "title": "Fastnacht in Franken 2027 · Bayerischer Rundfunk",
+    "description": "Porträts für Fastnacht in Franken / Bayerischer Rundfunk",
+    "cover": "/gallery/albums/fastnacht-franken-2027-br/thumbs/01_Christoph_Maul.jpg",
+    "count": 31,
     "images": [
       {
-        "id": "kb-0349",
-        "title": "kb-0349",
-        "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0349.jpg",
-        "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0349.jpg",
-        "width": 1555,
-        "height": 2200
+        "id": "ff-01-christoph-maul",
+        "title": "Christoph Maul",
+        "src": "/gallery/albums/fastnacht-franken-2027-br/01_Christoph_Maul.jpg",
+        "thumb": "/gallery/albums/fastnacht-franken-2027-br/thumbs/01_Christoph_Maul.jpg",
+        "width": 1130,
+        "height": 1600
       },
       {
-        "id": "kb-0353",
-        "title": "kb-0353",
-        "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0353.jpg",
-        "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0353.jpg",
-        "width": 1555,
-        "height": 2200
+        "id": "ff-02-doris-paul",
+        "title": "Doris Paul",
+        "src": "/gallery/albums/fastnacht-franken-2027-br/02_Doris_Paul.jpg",
+        "thumb": "/gallery/albums/fastnacht-franken-2027-br/thumbs/02_Doris_Paul.jpg",
+        "width": 1132,
+        "height": 1600
       },
       {
-        "id": "kb-0354",
-        "title": "kb-0354",
-        "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0354.jpg",
-        "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0354.jpg",
-        "width": 1555,
-        "height": 2200
+        "id": "ff-03-finn-reichert",
+        "title": "Finn Reichert",
+        "src": "/gallery/albums/fastnacht-franken-2027-br/03_Finn_Reichert.jpg",
+        "thumb": "/gallery/albums/fastnacht-franken-2027-br/thumbs/03_Finn_Reichert.jpg",
+        "width": 1132,
+        "height": 1600
       },
       {
-        "id": "kb-0355",
-        "title": "kb-0355",
-        "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0355.jpg",
-        "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0355.jpg",
-        "width": 1555,
-        "height": 2200
+        "id": "ff-04-janina-fuchs",
+        "title": "Janina Fuchs",
+        "src": "/gallery/albums/fastnacht-franken-2027-br/04_Janina_Fuchs.jpg",
+        "thumb": "/gallery/albums/fastnacht-franken-2027-br/thumbs/04_Janina_Fuchs.jpg",
+        "width": 1132,
+        "height": 1600
       },
       {
-        "id": "kb-0356",
-        "title": "kb-0356",
-        "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0356.jpg",
-        "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0356.jpg",
-        "width": 1555,
-        "height": 2200
+        "id": "ff-05-klaus-karl-kraus",
+        "title": "Klaus Karl Kraus",
+        "src": "/gallery/albums/fastnacht-franken-2027-br/05_Klaus_Karl-Kraus.jpg",
+        "thumb": "/gallery/albums/fastnacht-franken-2027-br/thumbs/05_Klaus_Karl-Kraus.jpg",
+        "width": 1132,
+        "height": 1600
       },
       {
-        "id": "kb-0357",
-        "title": "kb-0357",
-        "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0357.jpg",
-        "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0357.jpg",
-        "width": 1555,
-        "height": 2200
+        "id": "ff-06-laura-rahm",
+        "title": "Laura Rahm",
+        "src": "/gallery/albums/fastnacht-franken-2027-br/06_Laura_Rahm.jpg",
+        "thumb": "/gallery/albums/fastnacht-franken-2027-br/thumbs/06_Laura_Rahm.jpg",
+        "width": 1130,
+        "height": 1600
       },
       {
-        "id": "kb-0358",
-        "title": "kb-0358",
-        "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0358.jpg",
-        "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0358.jpg",
-        "width": 1555,
-        "height": 2200
+        "id": "ff-07-leonard-wolf",
+        "title": "Leonard Wolf",
+        "src": "/gallery/albums/fastnacht-franken-2027-br/07_Leonard_Wolf.jpg",
+        "thumb": "/gallery/albums/fastnacht-franken-2027-br/thumbs/07_Leonard_Wolf.jpg",
+        "width": 1130,
+        "height": 1600
       },
       {
-        "id": "kb-0359",
-        "title": "kb-0359",
-        "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0359.jpg",
-        "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0359.jpg",
-        "width": 1555,
-        "height": 2200
+        "id": "ff-08-matthias-walz",
+        "title": "Matthias Walz",
+        "src": "/gallery/albums/fastnacht-franken-2027-br/08_Matthias_Walz.jpg",
+        "thumb": "/gallery/albums/fastnacht-franken-2027-br/thumbs/08_Matthias_Walz.jpg",
+        "width": 1132,
+        "height": 1600
       },
       {
-        "id": "kb-0360",
-        "title": "kb-0360",
-        "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0360.jpg",
-        "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0360.jpg",
-        "width": 1555,
-        "height": 2200
+        "id": "ff-09-michl-muller",
+        "title": "Michl Muller",
+        "src": "/gallery/albums/fastnacht-franken-2027-br/09_Michl_Muller.jpg",
+        "thumb": "/gallery/albums/fastnacht-franken-2027-br/thumbs/09_Michl_Muller.jpg",
+        "width": 1130,
+        "height": 1600
       },
       {
-        "id": "kb-0361",
-        "title": "kb-0361",
-        "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0361.jpg",
-        "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0361.jpg",
-        "width": 1555,
-        "height": 2200
+        "id": "ff-10-oliver-tissot",
+        "title": "Oliver Tissot",
+        "src": "/gallery/albums/fastnacht-franken-2027-br/10_Oliver_Tissot.jpg",
+        "thumb": "/gallery/albums/fastnacht-franken-2027-br/thumbs/10_Oliver_Tissot.jpg",
+        "width": 1130,
+        "height": 1600
       },
       {
-        "id": "kb-0362",
-        "title": "kb-0362",
-        "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0362.jpg",
-        "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0362.jpg",
-        "width": 1555,
-        "height": 2200
+        "id": "ff-11-peter-kuhn",
+        "title": "Peter Kuhn",
+        "src": "/gallery/albums/fastnacht-franken-2027-br/11_Peter_Kuhn.jpg",
+        "thumb": "/gallery/albums/fastnacht-franken-2027-br/thumbs/11_Peter_Kuhn.jpg",
+        "width": 1130,
+        "height": 1600
       },
       {
-        "id": "kb-0363",
-        "title": "kb-0363",
-        "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0363.jpg",
-        "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0363.jpg",
-        "width": 1555,
-        "height": 2200
+        "id": "ff-12-philipp-weber",
+        "title": "Philipp Weber",
+        "src": "/gallery/albums/fastnacht-franken-2027-br/12_Philipp_Weber.jpg",
+        "thumb": "/gallery/albums/fastnacht-franken-2027-br/thumbs/12_Philipp_Weber.jpg",
+        "width": 1130,
+        "height": 1600
       },
       {
-        "id": "kb-0364",
-        "title": "kb-0364",
-        "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0364.jpg",
-        "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0364.jpg",
-        "width": 1555,
-        "height": 2200
+        "id": "ff-13-allersberger-flecklashexe",
+        "title": "Allersberger Flecklashexe",
+        "src": "/gallery/albums/fastnacht-franken-2027-br/13_Allersberger_Flecklashexe.jpg",
+        "thumb": "/gallery/albums/fastnacht-franken-2027-br/thumbs/13_Allersberger_Flecklashexe.jpg",
+        "width": 1130,
+        "height": 1600
       },
       {
-        "id": "kb-0365",
-        "title": "kb-0365",
-        "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0365.jpg",
-        "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0365.jpg",
-        "width": 1555,
-        "height": 2200
+        "id": "ff-14-marco-anderlik",
+        "title": "Marco Anderlik",
+        "src": "/gallery/albums/fastnacht-franken-2027-br/14_Marco_Anderlik.jpg",
+        "thumb": "/gallery/albums/fastnacht-franken-2027-br/thumbs/14_Marco_Anderlik.jpg",
+        "width": 1130,
+        "height": 1600
       },
       {
-        "id": "kb-0366",
-        "title": "kb-0366",
-        "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0366.jpg",
-        "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0366.jpg",
-        "width": 1555,
-        "height": 2200
+        "id": "ff-15-sebastian-reich-und-amanda",
+        "title": "Sebastian Reich und Amanda",
+        "src": "/gallery/albums/fastnacht-franken-2027-br/15_Sebastian_Reich_und_Amanda.jpg",
+        "thumb": "/gallery/albums/fastnacht-franken-2027-br/thumbs/15_Sebastian_Reich_und_Amanda.jpg",
+        "width": 1600,
+        "height": 1066
       },
       {
-        "id": "kb-0367",
-        "title": "kb-0367",
-        "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0367.jpg",
-        "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0367.jpg",
-        "width": 1555,
-        "height": 2200
+        "id": "ff-16-sebastian-reich-und-amanda-hochformat",
+        "title": "Sebastian Reich und Amanda Hochformat",
+        "src": "/gallery/albums/fastnacht-franken-2027-br/16_Sebastian_Reich_und_Amanda_Hochformat.jpg",
+        "thumb": "/gallery/albums/fastnacht-franken-2027-br/thumbs/16_Sebastian_Reich_und_Amanda_Hochformat.jpg",
+        "width": 1130,
+        "height": 1600
       },
       {
-        "id": "kb-0368",
-        "title": "kb-0368",
-        "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0368.jpg",
-        "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0368.jpg",
-        "width": 1555,
-        "height": 2200
+        "id": "ff-17-altneihauser-feierwehr-1-fif-2023",
+        "title": "Altneihauser Feierwehr 1 FiF 2023",
+        "src": "/gallery/albums/fastnacht-franken-2027-br/17_Altneihauser_Feierwehr_1_FiF_2023.jpg",
+        "thumb": "/gallery/albums/fastnacht-franken-2027-br/thumbs/17_Altneihauser_Feierwehr_1_FiF_2023.jpg",
+        "width": 1130,
+        "height": 1600
       },
       {
-        "id": "kb-0369",
-        "title": "kb-0369",
-        "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0369.jpg",
-        "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0369.jpg",
-        "width": 1555,
-        "height": 2200
+        "id": "ff-18-buchnesia-1-fif-2025",
+        "title": "Buchnesia 1 FiF 2025",
+        "src": "/gallery/albums/fastnacht-franken-2027-br/18_Buchnesia_1_FiF_2025.jpg",
+        "thumb": "/gallery/albums/fastnacht-franken-2027-br/thumbs/18_Buchnesia_1_FiF_2025.jpg",
+        "width": 1130,
+        "height": 1600
       },
       {
-        "id": "kb-0370",
-        "title": "kb-0370",
-        "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0370.jpg",
-        "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0370.jpg",
-        "width": 1555,
-        "height": 2200
+        "id": "ff-19-gankino-circus-dietenhofer-dudemanner-2-fif-2024",
+        "title": "Gankino Circus Dietenhofer Dudemanner 2 FiF 2024",
+        "src": "/gallery/albums/fastnacht-franken-2027-br/19_Gankino_Circus_Dietenhofer_Dudemanner_2_FiF_2024.jpg",
+        "thumb": "/gallery/albums/fastnacht-franken-2027-br/thumbs/19_Gankino_Circus_Dietenhofer_Dudemanner_2_FiF_2024.jpg",
+        "width": 1130,
+        "height": 1600
       },
       {
-        "id": "kb-0371",
-        "title": "kb-0371",
-        "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0371.jpg",
-        "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0371.jpg",
-        "width": 1555,
-        "height": 2200
+        "id": "ff-20-ines-procter-1-fif-2024",
+        "title": "Ines Procter 1 FiF 2024",
+        "src": "/gallery/albums/fastnacht-franken-2027-br/20_Ines_Procter_1_FiF_2024.jpg",
+        "thumb": "/gallery/albums/fastnacht-franken-2027-br/thumbs/20_Ines_Procter_1_FiF_2024.jpg",
+        "width": 1130,
+        "height": 1600
       },
       {
-        "id": "kb-0372",
-        "title": "kb-0372",
-        "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0372.jpg",
-        "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0372.jpg",
-        "width": 1555,
-        "height": 2200
+        "id": "ff-21-kc-rottenbach-garde-die-besenbinder-1-fif-2024",
+        "title": "KC Rottenbach Garde Die Besenbinder 1 FiF 2024",
+        "src": "/gallery/albums/fastnacht-franken-2027-br/21_KC_Rottenbach_Garde_Die_Besenbinder_1_FiF_2024.jpg",
+        "thumb": "/gallery/albums/fastnacht-franken-2027-br/thumbs/21_KC_Rottenbach_Garde_Die_Besenbinder_1_FiF_2024.jpg",
+        "width": 1130,
+        "height": 1600
       },
       {
-        "id": "kb-0373",
-        "title": "kb-0373",
-        "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0373.jpg",
-        "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0373.jpg",
-        "width": 1555,
-        "height": 2200
+        "id": "ff-22-lubber-und-babbo-1-fif-2024",
+        "title": "Lubber und Babbo 1 FiF 2024",
+        "src": "/gallery/albums/fastnacht-franken-2027-br/22_Lubber_und_Babbo_1_FiF_2024.jpg",
+        "thumb": "/gallery/albums/fastnacht-franken-2027-br/thumbs/22_Lubber_und_Babbo_1_FiF_2024.jpg",
+        "width": 1130,
+        "height": 1600
       },
       {
-        "id": "kb-0374",
-        "title": "kb-0374",
-        "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0374.jpg",
-        "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0374.jpg",
-        "width": 1555,
-        "height": 2200
+        "id": "ff-23-pavel-sandorf-bigband-1-fif-2026",
+        "title": "Pavel Sandorf BigBand 1 FiF 2026",
+        "src": "/gallery/albums/fastnacht-franken-2027-br/23_Pavel_Sandorf_BigBand_1_FiF_2026.jpg",
+        "thumb": "/gallery/albums/fastnacht-franken-2027-br/thumbs/23_Pavel_Sandorf_BigBand_1_FiF_2026.jpg",
+        "width": 1132,
+        "height": 1600
       },
       {
-        "id": "kb-0375",
-        "title": "kb-0375",
-        "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0375.jpg",
-        "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0375.jpg",
-        "width": 1555,
-        "height": 2200
+        "id": "ff-24-tanzmariechen-liana-wolf-jennifer-berger-1-fif-2",
+        "title": "Tanzmariechen Liana Wolf Jennifer Berger 1 FiF 2026",
+        "src": "/gallery/albums/fastnacht-franken-2027-br/24_Tanzmariechen_Liana_Wolf_Jennifer_Berger_1_FiF_2026.jpg",
+        "thumb": "/gallery/albums/fastnacht-franken-2027-br/thumbs/24_Tanzmariechen_Liana_Wolf_Jennifer_Berger_1_FiF_2026.jpg",
+        "width": 1130,
+        "height": 1600
       },
       {
-        "id": "kb-0376",
-        "title": "kb-0376",
-        "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0376.jpg",
-        "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0376.jpg",
-        "width": 1555,
-        "height": 2200
+        "id": "ff-25-turedancer-zellingen-2-fif-2025",
+        "title": "Turedancer Zellingen 2 FiF 2025",
+        "src": "/gallery/albums/fastnacht-franken-2027-br/25_Turedancer_Zellingen_2_FiF_2025.jpg",
+        "thumb": "/gallery/albums/fastnacht-franken-2027-br/thumbs/25_Turedancer_Zellingen_2_FiF_2025.jpg",
+        "width": 1130,
+        "height": 1600
       },
       {
-        "id": "kb-0377",
-        "title": "kb-0377",
-        "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0377.jpg",
-        "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0377.jpg",
-        "width": 1555,
-        "height": 2200
+        "id": "ff-26-viva-voce-1-fif-2023",
+        "title": "Viva Voce 1 FiF 2023",
+        "src": "/gallery/albums/fastnacht-franken-2027-br/26_Viva_Voce_1_FiF_2023.jpg",
+        "thumb": "/gallery/albums/fastnacht-franken-2027-br/thumbs/26_Viva_Voce_1_FiF_2023.jpg",
+        "width": 1130,
+        "height": 1600
       },
       {
-        "id": "kb-0378",
-        "title": "kb-0378",
-        "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0378.jpg",
-        "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0378.jpg",
-        "width": 1555,
-        "height": 2200
+        "id": "ff-27-spalter-zusammenstellung",
+        "title": "Spalter Zusammenstellung",
+        "src": "/gallery/albums/fastnacht-franken-2027-br/27_Spalter_Zusammenstellung.jpg",
+        "thumb": "/gallery/albums/fastnacht-franken-2027-br/thumbs/27_Spalter_Zusammenstellung.jpg",
+        "width": 1130,
+        "height": 1600
       },
       {
-        "id": "kb-0379",
-        "title": "kb-0379",
-        "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0379.jpg",
-        "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0379.jpg",
-        "width": 1555,
-        "height": 2200
+        "id": "ff-28-tsg-tanzsportgarde-sophia-oscar",
+        "title": "TSG Tanzsportgarde Sophia Oscar",
+        "src": "/gallery/albums/fastnacht-franken-2027-br/28_TSG_Tanzsportgarde_Sophia_Oscar.jpg",
+        "thumb": "/gallery/albums/fastnacht-franken-2027-br/thumbs/28_TSG_Tanzsportgarde_Sophia_Oscar.jpg",
+        "width": 1130,
+        "height": 1600
       },
       {
-        "id": "kb-0380",
-        "title": "kb-0380",
-        "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0380.jpg",
-        "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0380.jpg",
-        "width": 1555,
-        "height": 2200
+        "id": "ff-29-tanzpaar-fg-marktredwitz-doerflas-lena-meyer-ren",
+        "title": "Tanzpaar FG Marktredwitz Doerflas Lena Meyer Rene Skorupa",
+        "src": "/gallery/albums/fastnacht-franken-2027-br/29_Tanzpaar_FG_Marktredwitz-Doerflas_Lena_Meyer_Rene_Skorupa.jpg",
+        "thumb": "/gallery/albums/fastnacht-franken-2027-br/thumbs/29_Tanzpaar_FG_Marktredwitz-Doerflas_Lena_Meyer_Rene_Skorupa.jpg",
+        "width": 1130,
+        "height": 1600
       },
       {
-        "id": "kb-0381",
-        "title": "kb-0381",
-        "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0381.jpg",
-        "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0381.jpg",
-        "width": 1555,
-        "height": 2200
+        "id": "ff-30-heissmann-rassau",
+        "title": "Heissmann Rassau",
+        "src": "/gallery/albums/fastnacht-franken-2027-br/30_Heissmann_Rassau.jpg",
+        "thumb": "/gallery/albums/fastnacht-franken-2027-br/thumbs/30_Heissmann_Rassau.jpg",
+        "width": 1130,
+        "height": 1600
       },
       {
-        "id": "kb-0382",
-        "title": "kb-0382",
-        "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0382.jpg",
-        "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0382.jpg",
-        "width": 1555,
-        "height": 2200
-      },
-      {
-        "id": "kb-0383",
-        "title": "kb-0383",
-        "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0383.jpg",
-        "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0383.jpg",
-        "width": 1555,
-        "height": 2200
-      },
-      {
-        "id": "kb-0384",
-        "title": "kb-0384",
-        "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0384.jpg",
-        "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0384.jpg",
-        "width": 1555,
-        "height": 2200
+        "id": "ff-31-heissmann-rassau-als-waltraud-und-mariechen",
+        "title": "Heissmann Rassau als Waltraud und Mariechen",
+        "src": "/gallery/albums/fastnacht-franken-2027-br/31_Heissmann_Rassau_als_Waltraud_und_Mariechen.jpg",
+        "thumb": "/gallery/albums/fastnacht-franken-2027-br/thumbs/31_Heissmann_Rassau_als_Waltraud_und_Mariechen.jpg",
+        "width": 1130,
+        "height": 1600
       }
     ]
   },
@@ -1155,6 +1139,280 @@ export const galleryAlbums: GalleryAlbum[] = [
         "thumb": "/gallery/albums/hochzeit-tabea-maxi/thumbs/zhgybm5h.jpg",
         "width": 1272,
         "height": 1800
+      }
+    ]
+  },
+  {
+    "id": "local-kb-kulturspeicher",
+    "slug": "koenig-bauer-kulturspeicher",
+    "title": "König & Bauer · Kulturspeicher",
+    "description": "Event-Porträts König & Bauer im Kulturspeicher",
+    "cover": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0349.jpg",
+    "count": 33,
+    "images": [
+      {
+        "id": "kb-0349",
+        "title": "kb-0349",
+        "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0349.jpg",
+        "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0349.jpg",
+        "width": 1555,
+        "height": 2200
+      },
+      {
+        "id": "kb-0353",
+        "title": "kb-0353",
+        "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0353.jpg",
+        "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0353.jpg",
+        "width": 1555,
+        "height": 2200
+      },
+      {
+        "id": "kb-0354",
+        "title": "kb-0354",
+        "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0354.jpg",
+        "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0354.jpg",
+        "width": 1555,
+        "height": 2200
+      },
+      {
+        "id": "kb-0355",
+        "title": "kb-0355",
+        "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0355.jpg",
+        "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0355.jpg",
+        "width": 1555,
+        "height": 2200
+      },
+      {
+        "id": "kb-0356",
+        "title": "kb-0356",
+        "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0356.jpg",
+        "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0356.jpg",
+        "width": 1555,
+        "height": 2200
+      },
+      {
+        "id": "kb-0357",
+        "title": "kb-0357",
+        "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0357.jpg",
+        "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0357.jpg",
+        "width": 1555,
+        "height": 2200
+      },
+      {
+        "id": "kb-0358",
+        "title": "kb-0358",
+        "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0358.jpg",
+        "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0358.jpg",
+        "width": 1555,
+        "height": 2200
+      },
+      {
+        "id": "kb-0359",
+        "title": "kb-0359",
+        "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0359.jpg",
+        "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0359.jpg",
+        "width": 1555,
+        "height": 2200
+      },
+      {
+        "id": "kb-0360",
+        "title": "kb-0360",
+        "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0360.jpg",
+        "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0360.jpg",
+        "width": 1555,
+        "height": 2200
+      },
+      {
+        "id": "kb-0361",
+        "title": "kb-0361",
+        "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0361.jpg",
+        "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0361.jpg",
+        "width": 1555,
+        "height": 2200
+      },
+      {
+        "id": "kb-0362",
+        "title": "kb-0362",
+        "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0362.jpg",
+        "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0362.jpg",
+        "width": 1555,
+        "height": 2200
+      },
+      {
+        "id": "kb-0363",
+        "title": "kb-0363",
+        "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0363.jpg",
+        "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0363.jpg",
+        "width": 1555,
+        "height": 2200
+      },
+      {
+        "id": "kb-0364",
+        "title": "kb-0364",
+        "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0364.jpg",
+        "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0364.jpg",
+        "width": 1555,
+        "height": 2200
+      },
+      {
+        "id": "kb-0365",
+        "title": "kb-0365",
+        "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0365.jpg",
+        "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0365.jpg",
+        "width": 1555,
+        "height": 2200
+      },
+      {
+        "id": "kb-0366",
+        "title": "kb-0366",
+        "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0366.jpg",
+        "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0366.jpg",
+        "width": 1555,
+        "height": 2200
+      },
+      {
+        "id": "kb-0367",
+        "title": "kb-0367",
+        "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0367.jpg",
+        "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0367.jpg",
+        "width": 1555,
+        "height": 2200
+      },
+      {
+        "id": "kb-0368",
+        "title": "kb-0368",
+        "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0368.jpg",
+        "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0368.jpg",
+        "width": 1555,
+        "height": 2200
+      },
+      {
+        "id": "kb-0369",
+        "title": "kb-0369",
+        "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0369.jpg",
+        "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0369.jpg",
+        "width": 1555,
+        "height": 2200
+      },
+      {
+        "id": "kb-0370",
+        "title": "kb-0370",
+        "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0370.jpg",
+        "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0370.jpg",
+        "width": 1555,
+        "height": 2200
+      },
+      {
+        "id": "kb-0371",
+        "title": "kb-0371",
+        "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0371.jpg",
+        "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0371.jpg",
+        "width": 1555,
+        "height": 2200
+      },
+      {
+        "id": "kb-0372",
+        "title": "kb-0372",
+        "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0372.jpg",
+        "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0372.jpg",
+        "width": 1555,
+        "height": 2200
+      },
+      {
+        "id": "kb-0373",
+        "title": "kb-0373",
+        "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0373.jpg",
+        "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0373.jpg",
+        "width": 1555,
+        "height": 2200
+      },
+      {
+        "id": "kb-0374",
+        "title": "kb-0374",
+        "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0374.jpg",
+        "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0374.jpg",
+        "width": 1555,
+        "height": 2200
+      },
+      {
+        "id": "kb-0375",
+        "title": "kb-0375",
+        "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0375.jpg",
+        "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0375.jpg",
+        "width": 1555,
+        "height": 2200
+      },
+      {
+        "id": "kb-0376",
+        "title": "kb-0376",
+        "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0376.jpg",
+        "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0376.jpg",
+        "width": 1555,
+        "height": 2200
+      },
+      {
+        "id": "kb-0377",
+        "title": "kb-0377",
+        "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0377.jpg",
+        "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0377.jpg",
+        "width": 1555,
+        "height": 2200
+      },
+      {
+        "id": "kb-0378",
+        "title": "kb-0378",
+        "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0378.jpg",
+        "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0378.jpg",
+        "width": 1555,
+        "height": 2200
+      },
+      {
+        "id": "kb-0379",
+        "title": "kb-0379",
+        "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0379.jpg",
+        "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0379.jpg",
+        "width": 1555,
+        "height": 2200
+      },
+      {
+        "id": "kb-0380",
+        "title": "kb-0380",
+        "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0380.jpg",
+        "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0380.jpg",
+        "width": 1555,
+        "height": 2200
+      },
+      {
+        "id": "kb-0381",
+        "title": "kb-0381",
+        "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0381.jpg",
+        "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0381.jpg",
+        "width": 1555,
+        "height": 2200
+      },
+      {
+        "id": "kb-0382",
+        "title": "kb-0382",
+        "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0382.jpg",
+        "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0382.jpg",
+        "width": 1555,
+        "height": 2200
+      },
+      {
+        "id": "kb-0383",
+        "title": "kb-0383",
+        "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0383.jpg",
+        "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0383.jpg",
+        "width": 1555,
+        "height": 2200
+      },
+      {
+        "id": "kb-0384",
+        "title": "kb-0384",
+        "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0384.jpg",
+        "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0384.jpg",
+        "width": 1555,
+        "height": 2200
       }
     ]
   },
@@ -2630,334 +2888,314 @@ export const galleryAlbums: GalleryAlbum[] = [
 
 export const galleryImages: GalleryFlatImage[] = [
   {
-    "id": "kb-0349",
-    "title": "kb-0349",
-    "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0349.jpg",
-    "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0349.jpg",
-    "width": 1555,
-    "height": 2200,
-    "albumSlug": "koenig-bauer-kulturspeicher",
-    "albumTitle": "König & Bauer · Kulturspeicher"
+    "id": "ff-01-christoph-maul",
+    "title": "Christoph Maul",
+    "src": "/gallery/albums/fastnacht-franken-2027-br/01_Christoph_Maul.jpg",
+    "thumb": "/gallery/albums/fastnacht-franken-2027-br/thumbs/01_Christoph_Maul.jpg",
+    "width": 1130,
+    "height": 1600,
+    "albumSlug": "fastnacht-franken-2027-br",
+    "albumTitle": "Fastnacht in Franken 2027 · Bayerischer Rundfunk"
   },
   {
-    "id": "kb-0353",
-    "title": "kb-0353",
-    "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0353.jpg",
-    "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0353.jpg",
-    "width": 1555,
-    "height": 2200,
-    "albumSlug": "koenig-bauer-kulturspeicher",
-    "albumTitle": "König & Bauer · Kulturspeicher"
+    "id": "ff-02-doris-paul",
+    "title": "Doris Paul",
+    "src": "/gallery/albums/fastnacht-franken-2027-br/02_Doris_Paul.jpg",
+    "thumb": "/gallery/albums/fastnacht-franken-2027-br/thumbs/02_Doris_Paul.jpg",
+    "width": 1132,
+    "height": 1600,
+    "albumSlug": "fastnacht-franken-2027-br",
+    "albumTitle": "Fastnacht in Franken 2027 · Bayerischer Rundfunk"
   },
   {
-    "id": "kb-0354",
-    "title": "kb-0354",
-    "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0354.jpg",
-    "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0354.jpg",
-    "width": 1555,
-    "height": 2200,
-    "albumSlug": "koenig-bauer-kulturspeicher",
-    "albumTitle": "König & Bauer · Kulturspeicher"
+    "id": "ff-03-finn-reichert",
+    "title": "Finn Reichert",
+    "src": "/gallery/albums/fastnacht-franken-2027-br/03_Finn_Reichert.jpg",
+    "thumb": "/gallery/albums/fastnacht-franken-2027-br/thumbs/03_Finn_Reichert.jpg",
+    "width": 1132,
+    "height": 1600,
+    "albumSlug": "fastnacht-franken-2027-br",
+    "albumTitle": "Fastnacht in Franken 2027 · Bayerischer Rundfunk"
   },
   {
-    "id": "kb-0355",
-    "title": "kb-0355",
-    "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0355.jpg",
-    "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0355.jpg",
-    "width": 1555,
-    "height": 2200,
-    "albumSlug": "koenig-bauer-kulturspeicher",
-    "albumTitle": "König & Bauer · Kulturspeicher"
+    "id": "ff-04-janina-fuchs",
+    "title": "Janina Fuchs",
+    "src": "/gallery/albums/fastnacht-franken-2027-br/04_Janina_Fuchs.jpg",
+    "thumb": "/gallery/albums/fastnacht-franken-2027-br/thumbs/04_Janina_Fuchs.jpg",
+    "width": 1132,
+    "height": 1600,
+    "albumSlug": "fastnacht-franken-2027-br",
+    "albumTitle": "Fastnacht in Franken 2027 · Bayerischer Rundfunk"
   },
   {
-    "id": "kb-0356",
-    "title": "kb-0356",
-    "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0356.jpg",
-    "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0356.jpg",
-    "width": 1555,
-    "height": 2200,
-    "albumSlug": "koenig-bauer-kulturspeicher",
-    "albumTitle": "König & Bauer · Kulturspeicher"
+    "id": "ff-05-klaus-karl-kraus",
+    "title": "Klaus Karl Kraus",
+    "src": "/gallery/albums/fastnacht-franken-2027-br/05_Klaus_Karl-Kraus.jpg",
+    "thumb": "/gallery/albums/fastnacht-franken-2027-br/thumbs/05_Klaus_Karl-Kraus.jpg",
+    "width": 1132,
+    "height": 1600,
+    "albumSlug": "fastnacht-franken-2027-br",
+    "albumTitle": "Fastnacht in Franken 2027 · Bayerischer Rundfunk"
   },
   {
-    "id": "kb-0357",
-    "title": "kb-0357",
-    "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0357.jpg",
-    "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0357.jpg",
-    "width": 1555,
-    "height": 2200,
-    "albumSlug": "koenig-bauer-kulturspeicher",
-    "albumTitle": "König & Bauer · Kulturspeicher"
+    "id": "ff-06-laura-rahm",
+    "title": "Laura Rahm",
+    "src": "/gallery/albums/fastnacht-franken-2027-br/06_Laura_Rahm.jpg",
+    "thumb": "/gallery/albums/fastnacht-franken-2027-br/thumbs/06_Laura_Rahm.jpg",
+    "width": 1130,
+    "height": 1600,
+    "albumSlug": "fastnacht-franken-2027-br",
+    "albumTitle": "Fastnacht in Franken 2027 · Bayerischer Rundfunk"
   },
   {
-    "id": "kb-0358",
-    "title": "kb-0358",
-    "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0358.jpg",
-    "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0358.jpg",
-    "width": 1555,
-    "height": 2200,
-    "albumSlug": "koenig-bauer-kulturspeicher",
-    "albumTitle": "König & Bauer · Kulturspeicher"
+    "id": "ff-07-leonard-wolf",
+    "title": "Leonard Wolf",
+    "src": "/gallery/albums/fastnacht-franken-2027-br/07_Leonard_Wolf.jpg",
+    "thumb": "/gallery/albums/fastnacht-franken-2027-br/thumbs/07_Leonard_Wolf.jpg",
+    "width": 1130,
+    "height": 1600,
+    "albumSlug": "fastnacht-franken-2027-br",
+    "albumTitle": "Fastnacht in Franken 2027 · Bayerischer Rundfunk"
   },
   {
-    "id": "kb-0359",
-    "title": "kb-0359",
-    "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0359.jpg",
-    "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0359.jpg",
-    "width": 1555,
-    "height": 2200,
-    "albumSlug": "koenig-bauer-kulturspeicher",
-    "albumTitle": "König & Bauer · Kulturspeicher"
+    "id": "ff-08-matthias-walz",
+    "title": "Matthias Walz",
+    "src": "/gallery/albums/fastnacht-franken-2027-br/08_Matthias_Walz.jpg",
+    "thumb": "/gallery/albums/fastnacht-franken-2027-br/thumbs/08_Matthias_Walz.jpg",
+    "width": 1132,
+    "height": 1600,
+    "albumSlug": "fastnacht-franken-2027-br",
+    "albumTitle": "Fastnacht in Franken 2027 · Bayerischer Rundfunk"
   },
   {
-    "id": "kb-0360",
-    "title": "kb-0360",
-    "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0360.jpg",
-    "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0360.jpg",
-    "width": 1555,
-    "height": 2200,
-    "albumSlug": "koenig-bauer-kulturspeicher",
-    "albumTitle": "König & Bauer · Kulturspeicher"
+    "id": "ff-09-michl-muller",
+    "title": "Michl Muller",
+    "src": "/gallery/albums/fastnacht-franken-2027-br/09_Michl_Muller.jpg",
+    "thumb": "/gallery/albums/fastnacht-franken-2027-br/thumbs/09_Michl_Muller.jpg",
+    "width": 1130,
+    "height": 1600,
+    "albumSlug": "fastnacht-franken-2027-br",
+    "albumTitle": "Fastnacht in Franken 2027 · Bayerischer Rundfunk"
   },
   {
-    "id": "kb-0361",
-    "title": "kb-0361",
-    "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0361.jpg",
-    "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0361.jpg",
-    "width": 1555,
-    "height": 2200,
-    "albumSlug": "koenig-bauer-kulturspeicher",
-    "albumTitle": "König & Bauer · Kulturspeicher"
+    "id": "ff-10-oliver-tissot",
+    "title": "Oliver Tissot",
+    "src": "/gallery/albums/fastnacht-franken-2027-br/10_Oliver_Tissot.jpg",
+    "thumb": "/gallery/albums/fastnacht-franken-2027-br/thumbs/10_Oliver_Tissot.jpg",
+    "width": 1130,
+    "height": 1600,
+    "albumSlug": "fastnacht-franken-2027-br",
+    "albumTitle": "Fastnacht in Franken 2027 · Bayerischer Rundfunk"
   },
   {
-    "id": "kb-0362",
-    "title": "kb-0362",
-    "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0362.jpg",
-    "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0362.jpg",
-    "width": 1555,
-    "height": 2200,
-    "albumSlug": "koenig-bauer-kulturspeicher",
-    "albumTitle": "König & Bauer · Kulturspeicher"
+    "id": "ff-11-peter-kuhn",
+    "title": "Peter Kuhn",
+    "src": "/gallery/albums/fastnacht-franken-2027-br/11_Peter_Kuhn.jpg",
+    "thumb": "/gallery/albums/fastnacht-franken-2027-br/thumbs/11_Peter_Kuhn.jpg",
+    "width": 1130,
+    "height": 1600,
+    "albumSlug": "fastnacht-franken-2027-br",
+    "albumTitle": "Fastnacht in Franken 2027 · Bayerischer Rundfunk"
   },
   {
-    "id": "kb-0363",
-    "title": "kb-0363",
-    "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0363.jpg",
-    "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0363.jpg",
-    "width": 1555,
-    "height": 2200,
-    "albumSlug": "koenig-bauer-kulturspeicher",
-    "albumTitle": "König & Bauer · Kulturspeicher"
+    "id": "ff-12-philipp-weber",
+    "title": "Philipp Weber",
+    "src": "/gallery/albums/fastnacht-franken-2027-br/12_Philipp_Weber.jpg",
+    "thumb": "/gallery/albums/fastnacht-franken-2027-br/thumbs/12_Philipp_Weber.jpg",
+    "width": 1130,
+    "height": 1600,
+    "albumSlug": "fastnacht-franken-2027-br",
+    "albumTitle": "Fastnacht in Franken 2027 · Bayerischer Rundfunk"
   },
   {
-    "id": "kb-0364",
-    "title": "kb-0364",
-    "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0364.jpg",
-    "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0364.jpg",
-    "width": 1555,
-    "height": 2200,
-    "albumSlug": "koenig-bauer-kulturspeicher",
-    "albumTitle": "König & Bauer · Kulturspeicher"
+    "id": "ff-13-allersberger-flecklashexe",
+    "title": "Allersberger Flecklashexe",
+    "src": "/gallery/albums/fastnacht-franken-2027-br/13_Allersberger_Flecklashexe.jpg",
+    "thumb": "/gallery/albums/fastnacht-franken-2027-br/thumbs/13_Allersberger_Flecklashexe.jpg",
+    "width": 1130,
+    "height": 1600,
+    "albumSlug": "fastnacht-franken-2027-br",
+    "albumTitle": "Fastnacht in Franken 2027 · Bayerischer Rundfunk"
   },
   {
-    "id": "kb-0365",
-    "title": "kb-0365",
-    "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0365.jpg",
-    "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0365.jpg",
-    "width": 1555,
-    "height": 2200,
-    "albumSlug": "koenig-bauer-kulturspeicher",
-    "albumTitle": "König & Bauer · Kulturspeicher"
+    "id": "ff-14-marco-anderlik",
+    "title": "Marco Anderlik",
+    "src": "/gallery/albums/fastnacht-franken-2027-br/14_Marco_Anderlik.jpg",
+    "thumb": "/gallery/albums/fastnacht-franken-2027-br/thumbs/14_Marco_Anderlik.jpg",
+    "width": 1130,
+    "height": 1600,
+    "albumSlug": "fastnacht-franken-2027-br",
+    "albumTitle": "Fastnacht in Franken 2027 · Bayerischer Rundfunk"
   },
   {
-    "id": "kb-0366",
-    "title": "kb-0366",
-    "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0366.jpg",
-    "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0366.jpg",
-    "width": 1555,
-    "height": 2200,
-    "albumSlug": "koenig-bauer-kulturspeicher",
-    "albumTitle": "König & Bauer · Kulturspeicher"
+    "id": "ff-15-sebastian-reich-und-amanda",
+    "title": "Sebastian Reich und Amanda",
+    "src": "/gallery/albums/fastnacht-franken-2027-br/15_Sebastian_Reich_und_Amanda.jpg",
+    "thumb": "/gallery/albums/fastnacht-franken-2027-br/thumbs/15_Sebastian_Reich_und_Amanda.jpg",
+    "width": 1600,
+    "height": 1066,
+    "albumSlug": "fastnacht-franken-2027-br",
+    "albumTitle": "Fastnacht in Franken 2027 · Bayerischer Rundfunk"
   },
   {
-    "id": "kb-0367",
-    "title": "kb-0367",
-    "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0367.jpg",
-    "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0367.jpg",
-    "width": 1555,
-    "height": 2200,
-    "albumSlug": "koenig-bauer-kulturspeicher",
-    "albumTitle": "König & Bauer · Kulturspeicher"
+    "id": "ff-16-sebastian-reich-und-amanda-hochformat",
+    "title": "Sebastian Reich und Amanda Hochformat",
+    "src": "/gallery/albums/fastnacht-franken-2027-br/16_Sebastian_Reich_und_Amanda_Hochformat.jpg",
+    "thumb": "/gallery/albums/fastnacht-franken-2027-br/thumbs/16_Sebastian_Reich_und_Amanda_Hochformat.jpg",
+    "width": 1130,
+    "height": 1600,
+    "albumSlug": "fastnacht-franken-2027-br",
+    "albumTitle": "Fastnacht in Franken 2027 · Bayerischer Rundfunk"
   },
   {
-    "id": "kb-0368",
-    "title": "kb-0368",
-    "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0368.jpg",
-    "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0368.jpg",
-    "width": 1555,
-    "height": 2200,
-    "albumSlug": "koenig-bauer-kulturspeicher",
-    "albumTitle": "König & Bauer · Kulturspeicher"
+    "id": "ff-17-altneihauser-feierwehr-1-fif-2023",
+    "title": "Altneihauser Feierwehr 1 FiF 2023",
+    "src": "/gallery/albums/fastnacht-franken-2027-br/17_Altneihauser_Feierwehr_1_FiF_2023.jpg",
+    "thumb": "/gallery/albums/fastnacht-franken-2027-br/thumbs/17_Altneihauser_Feierwehr_1_FiF_2023.jpg",
+    "width": 1130,
+    "height": 1600,
+    "albumSlug": "fastnacht-franken-2027-br",
+    "albumTitle": "Fastnacht in Franken 2027 · Bayerischer Rundfunk"
   },
   {
-    "id": "kb-0369",
-    "title": "kb-0369",
-    "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0369.jpg",
-    "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0369.jpg",
-    "width": 1555,
-    "height": 2200,
-    "albumSlug": "koenig-bauer-kulturspeicher",
-    "albumTitle": "König & Bauer · Kulturspeicher"
+    "id": "ff-18-buchnesia-1-fif-2025",
+    "title": "Buchnesia 1 FiF 2025",
+    "src": "/gallery/albums/fastnacht-franken-2027-br/18_Buchnesia_1_FiF_2025.jpg",
+    "thumb": "/gallery/albums/fastnacht-franken-2027-br/thumbs/18_Buchnesia_1_FiF_2025.jpg",
+    "width": 1130,
+    "height": 1600,
+    "albumSlug": "fastnacht-franken-2027-br",
+    "albumTitle": "Fastnacht in Franken 2027 · Bayerischer Rundfunk"
   },
   {
-    "id": "kb-0370",
-    "title": "kb-0370",
-    "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0370.jpg",
-    "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0370.jpg",
-    "width": 1555,
-    "height": 2200,
-    "albumSlug": "koenig-bauer-kulturspeicher",
-    "albumTitle": "König & Bauer · Kulturspeicher"
+    "id": "ff-19-gankino-circus-dietenhofer-dudemanner-2-fif-2024",
+    "title": "Gankino Circus Dietenhofer Dudemanner 2 FiF 2024",
+    "src": "/gallery/albums/fastnacht-franken-2027-br/19_Gankino_Circus_Dietenhofer_Dudemanner_2_FiF_2024.jpg",
+    "thumb": "/gallery/albums/fastnacht-franken-2027-br/thumbs/19_Gankino_Circus_Dietenhofer_Dudemanner_2_FiF_2024.jpg",
+    "width": 1130,
+    "height": 1600,
+    "albumSlug": "fastnacht-franken-2027-br",
+    "albumTitle": "Fastnacht in Franken 2027 · Bayerischer Rundfunk"
   },
   {
-    "id": "kb-0371",
-    "title": "kb-0371",
-    "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0371.jpg",
-    "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0371.jpg",
-    "width": 1555,
-    "height": 2200,
-    "albumSlug": "koenig-bauer-kulturspeicher",
-    "albumTitle": "König & Bauer · Kulturspeicher"
+    "id": "ff-20-ines-procter-1-fif-2024",
+    "title": "Ines Procter 1 FiF 2024",
+    "src": "/gallery/albums/fastnacht-franken-2027-br/20_Ines_Procter_1_FiF_2024.jpg",
+    "thumb": "/gallery/albums/fastnacht-franken-2027-br/thumbs/20_Ines_Procter_1_FiF_2024.jpg",
+    "width": 1130,
+    "height": 1600,
+    "albumSlug": "fastnacht-franken-2027-br",
+    "albumTitle": "Fastnacht in Franken 2027 · Bayerischer Rundfunk"
   },
   {
-    "id": "kb-0372",
-    "title": "kb-0372",
-    "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0372.jpg",
-    "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0372.jpg",
-    "width": 1555,
-    "height": 2200,
-    "albumSlug": "koenig-bauer-kulturspeicher",
-    "albumTitle": "König & Bauer · Kulturspeicher"
+    "id": "ff-21-kc-rottenbach-garde-die-besenbinder-1-fif-2024",
+    "title": "KC Rottenbach Garde Die Besenbinder 1 FiF 2024",
+    "src": "/gallery/albums/fastnacht-franken-2027-br/21_KC_Rottenbach_Garde_Die_Besenbinder_1_FiF_2024.jpg",
+    "thumb": "/gallery/albums/fastnacht-franken-2027-br/thumbs/21_KC_Rottenbach_Garde_Die_Besenbinder_1_FiF_2024.jpg",
+    "width": 1130,
+    "height": 1600,
+    "albumSlug": "fastnacht-franken-2027-br",
+    "albumTitle": "Fastnacht in Franken 2027 · Bayerischer Rundfunk"
   },
   {
-    "id": "kb-0373",
-    "title": "kb-0373",
-    "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0373.jpg",
-    "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0373.jpg",
-    "width": 1555,
-    "height": 2200,
-    "albumSlug": "koenig-bauer-kulturspeicher",
-    "albumTitle": "König & Bauer · Kulturspeicher"
+    "id": "ff-22-lubber-und-babbo-1-fif-2024",
+    "title": "Lubber und Babbo 1 FiF 2024",
+    "src": "/gallery/albums/fastnacht-franken-2027-br/22_Lubber_und_Babbo_1_FiF_2024.jpg",
+    "thumb": "/gallery/albums/fastnacht-franken-2027-br/thumbs/22_Lubber_und_Babbo_1_FiF_2024.jpg",
+    "width": 1130,
+    "height": 1600,
+    "albumSlug": "fastnacht-franken-2027-br",
+    "albumTitle": "Fastnacht in Franken 2027 · Bayerischer Rundfunk"
   },
   {
-    "id": "kb-0374",
-    "title": "kb-0374",
-    "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0374.jpg",
-    "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0374.jpg",
-    "width": 1555,
-    "height": 2200,
-    "albumSlug": "koenig-bauer-kulturspeicher",
-    "albumTitle": "König & Bauer · Kulturspeicher"
+    "id": "ff-23-pavel-sandorf-bigband-1-fif-2026",
+    "title": "Pavel Sandorf BigBand 1 FiF 2026",
+    "src": "/gallery/albums/fastnacht-franken-2027-br/23_Pavel_Sandorf_BigBand_1_FiF_2026.jpg",
+    "thumb": "/gallery/albums/fastnacht-franken-2027-br/thumbs/23_Pavel_Sandorf_BigBand_1_FiF_2026.jpg",
+    "width": 1132,
+    "height": 1600,
+    "albumSlug": "fastnacht-franken-2027-br",
+    "albumTitle": "Fastnacht in Franken 2027 · Bayerischer Rundfunk"
   },
   {
-    "id": "kb-0375",
-    "title": "kb-0375",
-    "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0375.jpg",
-    "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0375.jpg",
-    "width": 1555,
-    "height": 2200,
-    "albumSlug": "koenig-bauer-kulturspeicher",
-    "albumTitle": "König & Bauer · Kulturspeicher"
+    "id": "ff-24-tanzmariechen-liana-wolf-jennifer-berger-1-fif-2",
+    "title": "Tanzmariechen Liana Wolf Jennifer Berger 1 FiF 2026",
+    "src": "/gallery/albums/fastnacht-franken-2027-br/24_Tanzmariechen_Liana_Wolf_Jennifer_Berger_1_FiF_2026.jpg",
+    "thumb": "/gallery/albums/fastnacht-franken-2027-br/thumbs/24_Tanzmariechen_Liana_Wolf_Jennifer_Berger_1_FiF_2026.jpg",
+    "width": 1130,
+    "height": 1600,
+    "albumSlug": "fastnacht-franken-2027-br",
+    "albumTitle": "Fastnacht in Franken 2027 · Bayerischer Rundfunk"
   },
   {
-    "id": "kb-0376",
-    "title": "kb-0376",
-    "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0376.jpg",
-    "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0376.jpg",
-    "width": 1555,
-    "height": 2200,
-    "albumSlug": "koenig-bauer-kulturspeicher",
-    "albumTitle": "König & Bauer · Kulturspeicher"
+    "id": "ff-25-turedancer-zellingen-2-fif-2025",
+    "title": "Turedancer Zellingen 2 FiF 2025",
+    "src": "/gallery/albums/fastnacht-franken-2027-br/25_Turedancer_Zellingen_2_FiF_2025.jpg",
+    "thumb": "/gallery/albums/fastnacht-franken-2027-br/thumbs/25_Turedancer_Zellingen_2_FiF_2025.jpg",
+    "width": 1130,
+    "height": 1600,
+    "albumSlug": "fastnacht-franken-2027-br",
+    "albumTitle": "Fastnacht in Franken 2027 · Bayerischer Rundfunk"
   },
   {
-    "id": "kb-0377",
-    "title": "kb-0377",
-    "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0377.jpg",
-    "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0377.jpg",
-    "width": 1555,
-    "height": 2200,
-    "albumSlug": "koenig-bauer-kulturspeicher",
-    "albumTitle": "König & Bauer · Kulturspeicher"
+    "id": "ff-26-viva-voce-1-fif-2023",
+    "title": "Viva Voce 1 FiF 2023",
+    "src": "/gallery/albums/fastnacht-franken-2027-br/26_Viva_Voce_1_FiF_2023.jpg",
+    "thumb": "/gallery/albums/fastnacht-franken-2027-br/thumbs/26_Viva_Voce_1_FiF_2023.jpg",
+    "width": 1130,
+    "height": 1600,
+    "albumSlug": "fastnacht-franken-2027-br",
+    "albumTitle": "Fastnacht in Franken 2027 · Bayerischer Rundfunk"
   },
   {
-    "id": "kb-0378",
-    "title": "kb-0378",
-    "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0378.jpg",
-    "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0378.jpg",
-    "width": 1555,
-    "height": 2200,
-    "albumSlug": "koenig-bauer-kulturspeicher",
-    "albumTitle": "König & Bauer · Kulturspeicher"
+    "id": "ff-27-spalter-zusammenstellung",
+    "title": "Spalter Zusammenstellung",
+    "src": "/gallery/albums/fastnacht-franken-2027-br/27_Spalter_Zusammenstellung.jpg",
+    "thumb": "/gallery/albums/fastnacht-franken-2027-br/thumbs/27_Spalter_Zusammenstellung.jpg",
+    "width": 1130,
+    "height": 1600,
+    "albumSlug": "fastnacht-franken-2027-br",
+    "albumTitle": "Fastnacht in Franken 2027 · Bayerischer Rundfunk"
   },
   {
-    "id": "kb-0379",
-    "title": "kb-0379",
-    "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0379.jpg",
-    "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0379.jpg",
-    "width": 1555,
-    "height": 2200,
-    "albumSlug": "koenig-bauer-kulturspeicher",
-    "albumTitle": "König & Bauer · Kulturspeicher"
+    "id": "ff-28-tsg-tanzsportgarde-sophia-oscar",
+    "title": "TSG Tanzsportgarde Sophia Oscar",
+    "src": "/gallery/albums/fastnacht-franken-2027-br/28_TSG_Tanzsportgarde_Sophia_Oscar.jpg",
+    "thumb": "/gallery/albums/fastnacht-franken-2027-br/thumbs/28_TSG_Tanzsportgarde_Sophia_Oscar.jpg",
+    "width": 1130,
+    "height": 1600,
+    "albumSlug": "fastnacht-franken-2027-br",
+    "albumTitle": "Fastnacht in Franken 2027 · Bayerischer Rundfunk"
   },
   {
-    "id": "kb-0380",
-    "title": "kb-0380",
-    "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0380.jpg",
-    "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0380.jpg",
-    "width": 1555,
-    "height": 2200,
-    "albumSlug": "koenig-bauer-kulturspeicher",
-    "albumTitle": "König & Bauer · Kulturspeicher"
+    "id": "ff-29-tanzpaar-fg-marktredwitz-doerflas-lena-meyer-ren",
+    "title": "Tanzpaar FG Marktredwitz Doerflas Lena Meyer Rene Skorupa",
+    "src": "/gallery/albums/fastnacht-franken-2027-br/29_Tanzpaar_FG_Marktredwitz-Doerflas_Lena_Meyer_Rene_Skorupa.jpg",
+    "thumb": "/gallery/albums/fastnacht-franken-2027-br/thumbs/29_Tanzpaar_FG_Marktredwitz-Doerflas_Lena_Meyer_Rene_Skorupa.jpg",
+    "width": 1130,
+    "height": 1600,
+    "albumSlug": "fastnacht-franken-2027-br",
+    "albumTitle": "Fastnacht in Franken 2027 · Bayerischer Rundfunk"
   },
   {
-    "id": "kb-0381",
-    "title": "kb-0381",
-    "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0381.jpg",
-    "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0381.jpg",
-    "width": 1555,
-    "height": 2200,
-    "albumSlug": "koenig-bauer-kulturspeicher",
-    "albumTitle": "König & Bauer · Kulturspeicher"
+    "id": "ff-30-heissmann-rassau",
+    "title": "Heissmann Rassau",
+    "src": "/gallery/albums/fastnacht-franken-2027-br/30_Heissmann_Rassau.jpg",
+    "thumb": "/gallery/albums/fastnacht-franken-2027-br/thumbs/30_Heissmann_Rassau.jpg",
+    "width": 1130,
+    "height": 1600,
+    "albumSlug": "fastnacht-franken-2027-br",
+    "albumTitle": "Fastnacht in Franken 2027 · Bayerischer Rundfunk"
   },
   {
-    "id": "kb-0382",
-    "title": "kb-0382",
-    "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0382.jpg",
-    "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0382.jpg",
-    "width": 1555,
-    "height": 2200,
-    "albumSlug": "koenig-bauer-kulturspeicher",
-    "albumTitle": "König & Bauer · Kulturspeicher"
-  },
-  {
-    "id": "kb-0383",
-    "title": "kb-0383",
-    "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0383.jpg",
-    "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0383.jpg",
-    "width": 1555,
-    "height": 2200,
-    "albumSlug": "koenig-bauer-kulturspeicher",
-    "albumTitle": "König & Bauer · Kulturspeicher"
-  },
-  {
-    "id": "kb-0384",
-    "title": "kb-0384",
-    "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0384.jpg",
-    "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0384.jpg",
-    "width": 1555,
-    "height": 2200,
-    "albumSlug": "koenig-bauer-kulturspeicher",
-    "albumTitle": "König & Bauer · Kulturspeicher"
+    "id": "ff-31-heissmann-rassau-als-waltraud-und-mariechen",
+    "title": "Heissmann Rassau als Waltraud und Mariechen",
+    "src": "/gallery/albums/fastnacht-franken-2027-br/31_Heissmann_Rassau_als_Waltraud_und_Mariechen.jpg",
+    "thumb": "/gallery/albums/fastnacht-franken-2027-br/thumbs/31_Heissmann_Rassau_als_Waltraud_und_Mariechen.jpg",
+    "width": 1130,
+    "height": 1600,
+    "albumSlug": "fastnacht-franken-2027-br",
+    "albumTitle": "Fastnacht in Franken 2027 · Bayerischer Rundfunk"
   },
   {
     "id": "23Y0gsv1",
@@ -4008,6 +4246,336 @@ export const galleryImages: GalleryFlatImage[] = [
     "height": 1800,
     "albumSlug": "hochzeit-tabea-maxi",
     "albumTitle": "Hochzeit Tabea & Maxi"
+  },
+  {
+    "id": "kb-0349",
+    "title": "kb-0349",
+    "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0349.jpg",
+    "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0349.jpg",
+    "width": 1555,
+    "height": 2200,
+    "albumSlug": "koenig-bauer-kulturspeicher",
+    "albumTitle": "König & Bauer · Kulturspeicher"
+  },
+  {
+    "id": "kb-0353",
+    "title": "kb-0353",
+    "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0353.jpg",
+    "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0353.jpg",
+    "width": 1555,
+    "height": 2200,
+    "albumSlug": "koenig-bauer-kulturspeicher",
+    "albumTitle": "König & Bauer · Kulturspeicher"
+  },
+  {
+    "id": "kb-0354",
+    "title": "kb-0354",
+    "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0354.jpg",
+    "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0354.jpg",
+    "width": 1555,
+    "height": 2200,
+    "albumSlug": "koenig-bauer-kulturspeicher",
+    "albumTitle": "König & Bauer · Kulturspeicher"
+  },
+  {
+    "id": "kb-0355",
+    "title": "kb-0355",
+    "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0355.jpg",
+    "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0355.jpg",
+    "width": 1555,
+    "height": 2200,
+    "albumSlug": "koenig-bauer-kulturspeicher",
+    "albumTitle": "König & Bauer · Kulturspeicher"
+  },
+  {
+    "id": "kb-0356",
+    "title": "kb-0356",
+    "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0356.jpg",
+    "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0356.jpg",
+    "width": 1555,
+    "height": 2200,
+    "albumSlug": "koenig-bauer-kulturspeicher",
+    "albumTitle": "König & Bauer · Kulturspeicher"
+  },
+  {
+    "id": "kb-0357",
+    "title": "kb-0357",
+    "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0357.jpg",
+    "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0357.jpg",
+    "width": 1555,
+    "height": 2200,
+    "albumSlug": "koenig-bauer-kulturspeicher",
+    "albumTitle": "König & Bauer · Kulturspeicher"
+  },
+  {
+    "id": "kb-0358",
+    "title": "kb-0358",
+    "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0358.jpg",
+    "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0358.jpg",
+    "width": 1555,
+    "height": 2200,
+    "albumSlug": "koenig-bauer-kulturspeicher",
+    "albumTitle": "König & Bauer · Kulturspeicher"
+  },
+  {
+    "id": "kb-0359",
+    "title": "kb-0359",
+    "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0359.jpg",
+    "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0359.jpg",
+    "width": 1555,
+    "height": 2200,
+    "albumSlug": "koenig-bauer-kulturspeicher",
+    "albumTitle": "König & Bauer · Kulturspeicher"
+  },
+  {
+    "id": "kb-0360",
+    "title": "kb-0360",
+    "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0360.jpg",
+    "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0360.jpg",
+    "width": 1555,
+    "height": 2200,
+    "albumSlug": "koenig-bauer-kulturspeicher",
+    "albumTitle": "König & Bauer · Kulturspeicher"
+  },
+  {
+    "id": "kb-0361",
+    "title": "kb-0361",
+    "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0361.jpg",
+    "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0361.jpg",
+    "width": 1555,
+    "height": 2200,
+    "albumSlug": "koenig-bauer-kulturspeicher",
+    "albumTitle": "König & Bauer · Kulturspeicher"
+  },
+  {
+    "id": "kb-0362",
+    "title": "kb-0362",
+    "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0362.jpg",
+    "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0362.jpg",
+    "width": 1555,
+    "height": 2200,
+    "albumSlug": "koenig-bauer-kulturspeicher",
+    "albumTitle": "König & Bauer · Kulturspeicher"
+  },
+  {
+    "id": "kb-0363",
+    "title": "kb-0363",
+    "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0363.jpg",
+    "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0363.jpg",
+    "width": 1555,
+    "height": 2200,
+    "albumSlug": "koenig-bauer-kulturspeicher",
+    "albumTitle": "König & Bauer · Kulturspeicher"
+  },
+  {
+    "id": "kb-0364",
+    "title": "kb-0364",
+    "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0364.jpg",
+    "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0364.jpg",
+    "width": 1555,
+    "height": 2200,
+    "albumSlug": "koenig-bauer-kulturspeicher",
+    "albumTitle": "König & Bauer · Kulturspeicher"
+  },
+  {
+    "id": "kb-0365",
+    "title": "kb-0365",
+    "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0365.jpg",
+    "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0365.jpg",
+    "width": 1555,
+    "height": 2200,
+    "albumSlug": "koenig-bauer-kulturspeicher",
+    "albumTitle": "König & Bauer · Kulturspeicher"
+  },
+  {
+    "id": "kb-0366",
+    "title": "kb-0366",
+    "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0366.jpg",
+    "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0366.jpg",
+    "width": 1555,
+    "height": 2200,
+    "albumSlug": "koenig-bauer-kulturspeicher",
+    "albumTitle": "König & Bauer · Kulturspeicher"
+  },
+  {
+    "id": "kb-0367",
+    "title": "kb-0367",
+    "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0367.jpg",
+    "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0367.jpg",
+    "width": 1555,
+    "height": 2200,
+    "albumSlug": "koenig-bauer-kulturspeicher",
+    "albumTitle": "König & Bauer · Kulturspeicher"
+  },
+  {
+    "id": "kb-0368",
+    "title": "kb-0368",
+    "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0368.jpg",
+    "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0368.jpg",
+    "width": 1555,
+    "height": 2200,
+    "albumSlug": "koenig-bauer-kulturspeicher",
+    "albumTitle": "König & Bauer · Kulturspeicher"
+  },
+  {
+    "id": "kb-0369",
+    "title": "kb-0369",
+    "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0369.jpg",
+    "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0369.jpg",
+    "width": 1555,
+    "height": 2200,
+    "albumSlug": "koenig-bauer-kulturspeicher",
+    "albumTitle": "König & Bauer · Kulturspeicher"
+  },
+  {
+    "id": "kb-0370",
+    "title": "kb-0370",
+    "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0370.jpg",
+    "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0370.jpg",
+    "width": 1555,
+    "height": 2200,
+    "albumSlug": "koenig-bauer-kulturspeicher",
+    "albumTitle": "König & Bauer · Kulturspeicher"
+  },
+  {
+    "id": "kb-0371",
+    "title": "kb-0371",
+    "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0371.jpg",
+    "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0371.jpg",
+    "width": 1555,
+    "height": 2200,
+    "albumSlug": "koenig-bauer-kulturspeicher",
+    "albumTitle": "König & Bauer · Kulturspeicher"
+  },
+  {
+    "id": "kb-0372",
+    "title": "kb-0372",
+    "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0372.jpg",
+    "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0372.jpg",
+    "width": 1555,
+    "height": 2200,
+    "albumSlug": "koenig-bauer-kulturspeicher",
+    "albumTitle": "König & Bauer · Kulturspeicher"
+  },
+  {
+    "id": "kb-0373",
+    "title": "kb-0373",
+    "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0373.jpg",
+    "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0373.jpg",
+    "width": 1555,
+    "height": 2200,
+    "albumSlug": "koenig-bauer-kulturspeicher",
+    "albumTitle": "König & Bauer · Kulturspeicher"
+  },
+  {
+    "id": "kb-0374",
+    "title": "kb-0374",
+    "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0374.jpg",
+    "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0374.jpg",
+    "width": 1555,
+    "height": 2200,
+    "albumSlug": "koenig-bauer-kulturspeicher",
+    "albumTitle": "König & Bauer · Kulturspeicher"
+  },
+  {
+    "id": "kb-0375",
+    "title": "kb-0375",
+    "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0375.jpg",
+    "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0375.jpg",
+    "width": 1555,
+    "height": 2200,
+    "albumSlug": "koenig-bauer-kulturspeicher",
+    "albumTitle": "König & Bauer · Kulturspeicher"
+  },
+  {
+    "id": "kb-0376",
+    "title": "kb-0376",
+    "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0376.jpg",
+    "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0376.jpg",
+    "width": 1555,
+    "height": 2200,
+    "albumSlug": "koenig-bauer-kulturspeicher",
+    "albumTitle": "König & Bauer · Kulturspeicher"
+  },
+  {
+    "id": "kb-0377",
+    "title": "kb-0377",
+    "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0377.jpg",
+    "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0377.jpg",
+    "width": 1555,
+    "height": 2200,
+    "albumSlug": "koenig-bauer-kulturspeicher",
+    "albumTitle": "König & Bauer · Kulturspeicher"
+  },
+  {
+    "id": "kb-0378",
+    "title": "kb-0378",
+    "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0378.jpg",
+    "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0378.jpg",
+    "width": 1555,
+    "height": 2200,
+    "albumSlug": "koenig-bauer-kulturspeicher",
+    "albumTitle": "König & Bauer · Kulturspeicher"
+  },
+  {
+    "id": "kb-0379",
+    "title": "kb-0379",
+    "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0379.jpg",
+    "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0379.jpg",
+    "width": 1555,
+    "height": 2200,
+    "albumSlug": "koenig-bauer-kulturspeicher",
+    "albumTitle": "König & Bauer · Kulturspeicher"
+  },
+  {
+    "id": "kb-0380",
+    "title": "kb-0380",
+    "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0380.jpg",
+    "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0380.jpg",
+    "width": 1555,
+    "height": 2200,
+    "albumSlug": "koenig-bauer-kulturspeicher",
+    "albumTitle": "König & Bauer · Kulturspeicher"
+  },
+  {
+    "id": "kb-0381",
+    "title": "kb-0381",
+    "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0381.jpg",
+    "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0381.jpg",
+    "width": 1555,
+    "height": 2200,
+    "albumSlug": "koenig-bauer-kulturspeicher",
+    "albumTitle": "König & Bauer · Kulturspeicher"
+  },
+  {
+    "id": "kb-0382",
+    "title": "kb-0382",
+    "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0382.jpg",
+    "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0382.jpg",
+    "width": 1555,
+    "height": 2200,
+    "albumSlug": "koenig-bauer-kulturspeicher",
+    "albumTitle": "König & Bauer · Kulturspeicher"
+  },
+  {
+    "id": "kb-0383",
+    "title": "kb-0383",
+    "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0383.jpg",
+    "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0383.jpg",
+    "width": 1555,
+    "height": 2200,
+    "albumSlug": "koenig-bauer-kulturspeicher",
+    "albumTitle": "König & Bauer · Kulturspeicher"
+  },
+  {
+    "id": "kb-0384",
+    "title": "kb-0384",
+    "src": "/gallery/albums/koenig-bauer-kulturspeicher/kb-0384.jpg",
+    "thumb": "/gallery/albums/koenig-bauer-kulturspeicher/thumbs/kb-0384.jpg",
+    "width": 1555,
+    "height": 2200,
+    "albumSlug": "koenig-bauer-kulturspeicher",
+    "albumTitle": "König & Bauer · Kulturspeicher"
   },
   {
     "id": "4yDyRVy",

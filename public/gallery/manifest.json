@@ -1,13 +1,13 @@
 {
-  "importedAt": "2026-11-12T08:09:31.717345Z",
-  "albumCount": 9,
-  "imageCount": 314,
+  "importedAt": "2026-11-12T10:42:58.251272+00:00",
+  "albumCount": 10,
+  "imageCount": 345,
   "albums": [
     {
-      "id": "local-kb-kulturspeicher",
-      "slug": "koenig-bauer-kulturspeicher",
-      "title": "König & Bauer · Kulturspeicher",
-      "count": 33
+      "id": "local-fif-2027-br",
+      "slug": "fastnacht-franken-2027-br",
+      "title": "Fastnacht in Franken 2027 · Bayerischer Rundfunk",
+      "count": 31
     },
     {
       "id": "nrG33v",
@@ -20,6 +20,12 @@
       "slug": "hochzeit-tabea-maxi",
       "title": "Hochzeit Tabea & Maxi",
       "count": 83
+    },
+    {
+      "id": "local-kb-kulturspeicher",
+      "slug": "koenig-bauer-kulturspeicher",
+      "title": "König & Bauer · Kulturspeicher",
+      "count": 33
     },
     {
       "id": "HX3Rx1",
